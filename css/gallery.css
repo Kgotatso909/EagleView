@@ -1,0 +1,16 @@
+/* Import custome fonts from fonts.css file */
+@import url("./fonts.css");
+@import url("./partials/variables.css");
+@import url("./mediaquery.css");
+.hero {
+  min-height: 50vh;
+}
+
+.gallery-page-section {
+  background-color: var(--bg-secondary-light);
+
+  svg {
+    background-color: var(--bg-primary-dark);
+    fill: var(--bg-secondary-light);
+  }
+}

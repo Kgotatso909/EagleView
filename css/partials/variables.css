@@ -1,0 +1,36 @@
+/* CSS Variables */
+
+:root {
+  --bg-primary-light: #f2f2f0;
+  --bg-secondary-light: #d8d3bc;
+  --bg-primary-dark: #ebe8d8;
+  --bg-secondary-dark: #c7c4b1;
+  --text-color: #000000;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* font family variables */
+  --page-font: "Page font", cursive;
+  --title-font: "Title font";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-primary-dark);
+  color: var(--text-color);
+  font-family: var(--page-font);
+  font-size: 16px;
+}
