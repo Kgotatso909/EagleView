@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Book your stay at Eagle View Kungwini. Choose from luxury rooms, select your dates, and make your special requests online."
+    />
+    <meta
+      name="keywords"
+      content="Eagle View Kungwini, room booking, luxury lodge, Bronkhorstspruit, check-in, check-out, accommodations"
+    />
+    <meta name="author" content="Kgotatso Nelson Mohlala" />
+    <meta property="og:title" content="Booking | Eagle View Kungwini" />
+    <meta
+      property="og:description"
+      content="Easily book a room at Eagle View Kungwini. Select your check-in and check-out dates, choose your room, and submit your booking request."
+    />
+    <meta property="og:image" content="URL to booking-related image" />
+    <meta property="og:url" content="URL to the booking page" />
+    <meta name="robots" content="index, follow" />
+    <title>Booking | Eagle View Kungwini</title>
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- Swiper bundle-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- Custome css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Custome contact css -->
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <!-- Custome about css -->
+    <link rel="stylesheet" href="css/about.css" />
+
+    <!-- Flactpickr lib css -->
+    <link rel="stylesheet" href="css/flatpickr.min.css" />
+
+    <!-- Custome booking css -->
+    <link rel="stylesheet" href="css/booking.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingReservation",
+        "name": "Room Booking | Eagle View Kungwini",
+        "description": "Reserve your stay at Eagle View Kungwini by selecting your check-in and check-out dates, room type, and number of guests.",
+        "url": "https://yourwebsite.com/booking",
+        "reservationStatus": "http://schema.org/Confirmed",
+        "provider": {
+          "@type": "LodgingBusiness",
+          "name": "Eagle View Kungwini",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "21 Witkruis Arend St, Kungwini Country Estate",
+            "addressLocality": "Bronkhorstspruit",
+            "addressRegion": "Gauteng",
+            "postalCode": "1020",
+            "addressCountry": "ZA"
+          },
+          "telephone": "+27 834113931",
+          "email": "info@eagleviewkungwini.co.za"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="main-menu">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Eagle View</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="me-auto"></div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="booking.html">booking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="hero-section">
+          <div class="container text-center py-5">
+            <h1 class="hero-title">Book Your Stay at Eagle View Kungwini</h1>
+            <p class="hero-description">
+              Experience luxury and tranquility in Bronkhorstspruit. Select your
+              dates and reserve your room today!
+            </p>
+            <a href="#bookingForm" class="btn btn-primary btn-lg">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends here -->
+    <!-- Booking section starts here -->
+    <section class="booking-section section">
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="
+              visibility: visible;
+              animation-delay: 0.1s;
+              animation-name: fadeInUp;
+            "
+          >
+            <h6 class="section-title text-center text-primary text-uppercase">
+              Room Booking
+            </h6>
+            <h1 class="mb-5">
+              Book A
+              <span class="text-primary text-uppercase">Luxury Room</span>
+            </h1>
+          </div>
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded w-75 wow zoomIn"
+                    data-wow-delay="0.1s"
+                    src="assets/images/hero-sm-screen-1.png"
+                    style="
+                      margin-top: 25%;
+                      visibility: visible;
+                      animation-delay: 0.1s;
+                      animation-name: zoomIn;
+                    "
+                  />
+                </div>
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid rounded w-100 wow zoomIn"
+                    data-wow-delay="0.3s"
+                    src="assets/images/bedroom-1.png"
+                    style="
+                      visibility: visible;
+                      animation-delay: 0.3s;
+                      animation-name: zoomIn;
+                    "
+                  />
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded w-50 wow zoomIn"
+                    data-wow-delay="0.5s"
+                    src="assets/images/outdoor-view.png"
+                    style="
+                      visibility: visible;
+                      animation-delay: 0.5s;
+                      animation-name: zoomIn;
+                    "
+                  />
+                </div>
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid rounded w-75 wow zoomIn"
+                    data-wow-delay="0.7s"
+                    src="assets/images/hero-lg-screen.png"
+                    style="
+                      visibility: visible;
+                      animation-delay: 0.7s;
+                      animation-name: zoomIn;
+                    "
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="wow fadeInUp"
+                data-wow-delay="0.2s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.2s;
+                  animation-name: fadeInUp;
+                "
+              >
+                <form id="bookingForm">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your Name"
+                          aria-label="Enter your name"
+                        />
+                        <label for="name">Your Name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Your Email"
+                          aria-label="Enter your email address"
+                        />
+                        <label for="email">Your Email</label>
+                      </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        id="checkin"
+                        class="form-control"
+                        placeholder="Select Check-in Date"
+                        required
+                      />
+                      <label for="checkin">Check-in Date</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        id="checkout"
+                        class="form-control"
+                        placeholder="Select Check-out Date"
+                        required
+                      />
+                      <label for="checkout">Check-out Date</label>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <select class="form-select" id="select1">
+                          <option value="1">Adult 1</option>
+                          <option value="2">Adult 2</option>
+                          <option value="3">Adult 3</option>
+                        </select>
+                        <label for="select1">Select Adult</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <select class="form-select" id="select2">
+                          <option value="1">Child 1</option>
+                          <option value="2">Child 2</option>
+                          <option value="3">Child 3</option>
+                        </select>
+                        <label for="select2">Select Child</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-floating">
+                        <select class="form-select" id="select3">
+                          <option value="1">Room 1</option>
+                          <option value="2">Room 2</option>
+                          <option value="3">Room 3</option>
+                          <option value="1">Room 4</option>
+                          <option value="2">Room 5</option>
+                          <option value="3">Room 6</option>
+                          <option value="3">Room 7</option>
+                        </select>
+                        <label for="select3">Select A Room</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          placeholder="Special Request"
+                          id="message"
+                          style="height: 100px"
+                        ></textarea>
+                        <label for="message">Special Request</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary w-100 py-3" type="submit">
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="submissionToast"
+        class="toast position-fixed bottom-0 end-0 p-3"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        style="display: none"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Booking Confirmation</strong>
+          <small class="text-muted">Just now</small>
+          <button
+            type="button"
+            class="btn-close"
+            onclick="hideToast()"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">
+          Thank you for booking with us! We’ll get back to you soon with your
+          reservation details.
+        </div>
+      </div>
+      <svg
+        preserveAspectRatio="xMidYMax slice"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 2000 82"
+      >
+        <g fill="%23000000">
+          <path
+            style="isolation: isolate"
+            opacity=".75"
+            d="M140 38l-18 10v20l18 10 17-10V48l-17-10z"
+          ></path>
+          <path
+            d="M179 53l-11 6v13l11 6 10-6V59l-10-6zM82 40L66 50v19l16 9 17-9V50L82 40zM416 37l-17 10v20l17 10 17-10V47l-17-10zM455 47l-11 6v13l11 6 11-6V53l-11-6z"
+          ></path>
+          <path
+            style="isolation: isolate"
+            opacity=".5"
+            d="M359 42l-17 10v19l17 9 16-9V52l-16-10z"
+          ></path>
+          <path d="M693 42l14 8v15l-14 8-13-8V50l13-8z"></path>
+          <path
+            style="isolation: isolate"
+            opacity=".5"
+            d="M637 47l11 6v13l-11 6-11-6V53l11-6z"
+          ></path>
+          <path
+            style="isolation: isolate"
+            opacity=".75"
+            d="M555 57l10 5v11l-10 6-9-6V62l9-5z"
+          ></path>
+          <path d="M733 47l12 8v14l-12 8-13-8V55l13-8z"></path>
+          <path
+            style="isolation: isolate"
+            opacity=".5"
+            d="M791 62l8 4v9l-8 4-8-4v-9l8-4z"
+          ></path>
+          <path
+            style="isolation: isolate"
+            opacity=".75"
+            d="M984 43l-14 9v16l14 8 14-8V52l-14-9zM854 52l-13 7v16l13 7 13-7V59l-13-7z"
+          ></path>
+          <path d="M1052 60l-8 5v9l8 5 8-5v-9l-8-5z"></path>
+          <path
+            style="isolation: isolate"
+            opacity=".5"
+            d="M937 47l-13 7v15l13 8 13-8V54l-13-7zM1271 43l-16 9v19l16 9 16-9V52l-16-9z"
+          ></path>
+          <path d="M1324 52l-11 6v12l11 6 11-6V58l-11-6z"></path>
+          <path
+            style="isolation: isolate"
+            opacity=".75"
+            d="M1216 43l-15 9v17l15 9 15-9V52l-15-9z"
+          ></path>
+          <path
+            style="isolation: isolate"
+            opacity=".5"
+            d="M1168 49l-12 7v14l12 6 11-6V56l-11-7z"
+          ></path>
+          <path
+            style="isolation: isolate"
+            opacity=".75"
+            d="M1548 48l13 7v15l-13 7-12-7V55l12-7z"
+          ></path>
+          <path
+            style="isolation: isolate"
+            opacity=".5"
+            d="M1504 44l11 7v12l-11 6-11-6V51l11-7z"
+          ></path>
+          <path
+            d="M1410 60l9 6v11l-9 5-10-5V66l10-6zM1448 43l14 8v16l-14 8-14-8V51l14-8z"
+          ></path>
+          <path
+            style="isolation: isolate"
+            opacity=".5"
+            d="M1589 57l10 6v12l-10 6-10-6V63l10-6z"
+          ></path>
+          <path d="M1805 53l-11 7v14l11 6 12-6V60l-12-7z"></path>
+          <path
+            style="isolation: isolate"
+            opacity=".5"
+            d="M1859 55l-8 4v9l8 5 8-5v-9l-8-4z"
+          ></path>
+          <path d="M1974 34l-18 10v21l18 11 18-11V44l-18-10z"></path>
+          <path
+            style="isolation: isolate"
+            opacity=".5"
+            d="M1922 44l-10 5v11l10 6 9-6V49l-9-5z"
+          ></path>
+          <path
+            style="isolation: isolate"
+            opacity=".75"
+            d="M1765 35l-16 9v19l16 9 16-9V44l-16-9z"
+          ></path>
+          <path d="M1696 48l-12 7v15l12 7 13-7V55l-13-7z"></path>
+          <path
+            d="M1989 15l-9 16-10-16-30 33-18-32-30 51-21-37-11 18-10-17-19 33-22-39-15 26-26-34-8 13-7-12-22 39-19-33-9 15-12-21-36 49-22-39-24 41-22-38-15 27-24-31-16 21-21-26-7 12-8-14-20 30-19-31-10 17-11-19-29 33-18-32-29 51-22-37-11 18-9-17-19 33-30-44-22 29-12-31-7 13-8-12-27 32-14-25-9 15-12-21-36 47-22-40-26 44-21-37-16 27-24-37-10 26-24-31-9 17-10-16-20 20-18-21-10 17-11-20-28 37-19-32-29 50-22-37-10 19-10-17-19 32-29-50-15 25-19-20-8 13-7-13-22 26-20-25-8 14-12-21-36 54-33-50-34 53-22-37-16 27-25-44-11 20-21-26-10 17-9-16-21 38-18-34-9 17-12-20-28 39-18-31-30 50-21-37-11 18-10-17-19 33-29-51-15 26-19-26-7 10-8-10-22 32-19-27-9 8-12-14-36 55L0 17V0h2000v49l-11-34z"
+          ></path>
+        </g>
+      </svg>
+    </section>
+    <!-- Footer starts here -->
+    <footer class="footer-section section" class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3 page-navigation">
+          <h5>Page navigation</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Gallery</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Booking</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3 footer-contact">
+          <h5>Contact</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <address>
+                Kungwini Ranch, 21 witkruis arend str, Kungwini Country Estate,
+                Bronkhorstspruit, 1020
+              </address>
+            </li>
+            <li class="nav-item mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope-at"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"
+                />
+                <path
+                  d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
+                />
+              </svg>
+              <a href="mailto:eagleviewkungwini.co.za"
+                >info@eagleviewkungwini.co.za</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-telephone-x-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm9.261 1.135a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+              <p>Tel : 0834113931</p>
+            </li>
+            <li class="nav-item mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-printer-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1"
+                />
+                <path
+                  d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"
+                />
+              </svg>
+              <p>Fax : ------</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden"
+                >Email address</label
+              >
+              <input
+                id="newsletter1"
+                type="text"
+                class="form-control"
+                placeholder="Email address"
+              />
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+      >
+        <p>
+          © 2024 Eagle View Kungwini. All rights reserved. Developed by KN
+          Mohlala
+        </p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#">
+              <!-- Twitter Icon (Feather) -->
+              <svg
+                class="social-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000"
+                class="bi bi-twitter-x"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#">
+              <!-- Instagram Icon (Feather) -->
+              <svg
+                class="social-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#c13584"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#">
+              <!-- Facebook Icon (Feather) -->
+              <svg
+                class="social-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="js/jquery.3.7.1.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Swiper bundle JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Custome Swiper JS -->
+    <script src="js/swiper.js"></script>
+
+    <!-- Custome flatpickr JS -->
+    <script src="js/flactpickr.min.js"></script>
+
+    <!-- Index JS -->
+    <script src="js/index.js"></script>
+
+    <!-- Booking JS -->
+    <script src="js/booking.js"></script>
+  </body>
+</html>

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>
+      Eagle View Kungwini | Exclusive Guest Lodge in Kungwini, Bronkhorstspruit
+    </title>
+    <meta
+      name="description"
+      content="Book your stay at Eagle View Kungwini for a peaceful getaway. Enjoy comfortable rooms, an on-site bar, and easy access to the town center."
+    />
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- Swiper bundle-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- Custome css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Eagle View Kungwini",
+        "image": "https://example.com/assets/images/hero-lg-screen.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "21 Witkruis Arend St, Kungwini Country Estate",
+          "addressLocality": "Bronkhorstspruit",
+          "addressRegion": "Gauteng",
+          "postalCode": "1020",
+          "addressCountry": "ZA"
+        },
+        "priceRange": "$$",
+        "telephone": "+27 834113931",
+        "email": "info@eagleviewkungwini.co.za",
+        "url": "https://example.com",
+        "amenities": [
+          "Free Wifi",
+          "Free Parking",
+          "Outdoor Pool",
+          "Child-Friendly",
+          "Bar",
+          "Restaurant"
+        ],
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -25.8890895,
+          "longitude": 28.7017946
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": "Gerrit Malan",
+            "datePublished": "2024-12-01",
+            "description": "Since our arrival late Friday afternoon until our departure on Sunday morning, we were met with utmost sincerity.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": "Willie Scholtz",
+            "datePublished": "2024-12-01",
+            "description": "It was a 40th birthday celebration, and the venue was perfect for the occasion.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ================== Start Header Area ============= -->
+    <header class="header_area">
+      <div class="main-menu">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Eagle View</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="me-auto"></div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="booking.html">booking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero">
+        <div class="hero-bg-color"></div>
+        <div class="text-secondary px-4 py-5 text-center hero-content">
+          <div class="py-5">
+            <h1 class="display-5">
+              Experience tranquil comfort in Bronkhorstspruit
+            </h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="fs-5 mb-4">
+                Discover a serene sanctuary in the heart of Bronkhorstspruit,
+                where comfort and tranquility meet to rejuvenate your soul.
+              </p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button
+                  type="button"
+                  class="btn btn-outline-light btn-lg px-4 fw-bold btn-contact"
+                >
+                  Contact us
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold btn-book"
+                >
+                  Book now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ================== Ends Header Area ============= -->
+    <!-- ================== facility Section start here =============== -->
+    <section class="facility-section section">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 section-title">Royal Facilities</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-wifi"></i> Free Wifi
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                Stay connected with complimentary high-speed internet during
+                your stay.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-car"></i> Free Parking
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                Secure and convenient parking available at no extra charge.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-swimming-pool"></i> outdoor pool
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                Take a refreshing dip in our well-maintained outdoor pool,
+                perfect for relaxation and leisure.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-coffee"></i> Tea and Coffee
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                Enjoy complimentary tea and coffee throughout your stay,
+                available in your room and shared spaces.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-hamburger"></i> Breakfast available
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                Enjoy complimentary tea and coffee throughout your stay,
+                available in your room and shared spaces.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-bking"></i> Activities
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                Enjoy cycling, mountain biking, and horseback riding nearby, or
+                relax with fishing and swimming on-site. Perfect for both
+                adventure and leisure.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg
+        preserveAspectRatio="xMidYMax slice"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 2000 68"
+      >
+        <g>
+          <path
+            d="M0 24V0h2000v20h-31l-22 38-22-38h-58l-22 38-22-38h-57l-22 38-22-38h-58l-22 38-22-38h-57l-22 38-22-38h-57l-22 38-22-38h-58l-22 38-22-38h-57l-22 38-22-38h-58l-22 38-22-38h-57l-22 38-22-38h-58l-22 38-22-38h-57l-22 38-22-38h-57l-22 38-22-38h-58l-22 38-22-38h-57l-22 38-22-38h-58l-22 38-22-38h-57l-22 38-22-38h-58l-22 38-22-38h-57l-22 38-22-38H42L20 58l-4-6L0 24z"
+          ></path>
+          <path
+            d="M1974 48h13l6-11-6-11h-13l-6 11 6 11zm-12 13h6l3-6-3-5h-6l-3 5 3 6zm17 7h9l4-7-4-7h-9l-4 7 4 7zm-69-20h12l6-11-6-11h-12l-7 11 7 11zm-13 13h6l4-6-4-5h-6l-3 5 3 6zm17 7h9l4-7-4-7h-9l-4 7 4 7zm-109-20h12l7-11-7-11h-12l-6 11 6 11zm-13 13h7l3-6-3-5h-7l-3 5 3 6zm18 7h8l5-7-5-7h-8l-4 7 4 7zm-107-20h13l6-11-6-11h-13l-6 11 6 11zm-12 13h6l4-6-4-5h-6l-3 5 3 6zm17 7h9l4-7-4-7h-9l-4 7 4 7zm-105-20h12l6-11-6-11h-12l-6 11 6 11zm-13 13h7l3-6-3-5h-7l-3 5 3 6zm18 7h8l5-7-5-7h-8l-5 7 5 7zm-105-20h13l6-11-6-11h-13l-6 11 6 11zm-12 13h6l3-6-3-5h-6l-3 5 3 6zm17 7h9l4-7-4-7h-9l-4 7 4 7zm-106-20h12l6-11-6-11h-12l-7 11 7 11zm-13 13h7l3-6-3-5h-7l-3 5 3 6zm18 7h8l4-7-4-7h-8l-5 7 5 7zm-110-20h12l7-11-7-11h-12l-6 11 6 11zm-12 13h6l3-6-3-5h-6l-4 5 4 6zm17 7h9l4-7-4-7h-9l-4 7 4 7zm-106-20h13l6-11-6-11h-13l-6 11 6 11zm-12 13h6l4-6-4-5h-6l-3 5 3 6zm17 7h9l4-7-4-7h-9l-4 7 4 7zm-140-20h12l6-11-6-11h-12l-7 11 7 11zm-13 13h7l3-6-3-5h-7l-3 5 3 6zm18 7h8l4-7-4-7h-8l-5 7 5 7zm-72-20h13l6-11-6-11h-13l-6 11 6 11zm-12 13h6l4-6-4-5h-6l-3 5 3 6zm17 7h9l4-7-4-7h-9l-4 7 4 7zM858 48h13l6-11-6-11h-13l-6 11 6 11zm-12 13h6l3-6-3-5h-6l-3 5 3 6zm17 7h9l4-7-4-7h-9l-4 7 4 7zM758 48h13l6-11-6-11h-13l-6 11 6 11zm-12 13h6l3-6-3-5h-6l-4 5 4 6zm17 7h9l4-7-4-7h-9l-4 7 4 7zM657 48h12l6-11-6-11h-12l-7 11 7 11zm-13 13h7l3-6-3-5h-7l-3 5 3 6zm17 7h9l4-7-4-7h-9l-4 7 4 7zM560 48h12l7-11-7-11h-12l-6 11 6 11zm-12 13h6l3-6-3-5h-6l-4 5 4 6zm17 7h8l5-7-5-7h-8l-4 7 4 7zM456 48h13l6-11-6-11h-13l-6 11 6 11zm-12 13h6l4-6-4-5h-6l-3 5 3 6zm17 7h9l4-7-4-7h-9l-4 7 4 7zM353 48h12l6-11-6-11h-12l-6 11 6 11zm-13 13h7l3-6-3-5h-7l-3 5 3 6zm18 7h8l5-7-5-7h-8l-5 7 5 7zM249 48h13l6-11-6-11h-13l-6 11 6 11zm-12 13h6l3-6-3-5h-6l-3 5 3 6zm17 7h9l4-7-4-7h-9l-4 7 4 7zM150 48h12l6-11-6-11h-12l-7 11 7 11zm-13 13h7l3-6-3-5h-7l-3 5 3 6zm18 7h8l4-7-4-7h-8l-5 7 5 7zM48 48h12l6-11-6-11H48l-6 11 6 11zM35 61h7l3-6-3-5h-7l-3 5 3 6zm18 7h8l5-7-5-7h-8l-5 7 5 7zm35-21H75l-6 11 6 10h13l6-10-6-11zm12-13h-6l-4 5 4 6h6l3-6-3-5zm-17-8h-9l-4 8 4 7h9l4-7-4-8zm107 21h-12l-7 11 7 10h12l6-10-6-11zm12-13h-6l-3 5 3 6h6l4-6-4-5zm-17-8h-8l-5 8 5 7h8l4-7-4-8zm107 21h-12l-6 11 6 10h12l7-10-7-11zm13-13h-7l-3 5 3 6h7l3-6-3-5zm-17-8h-9l-4 8 4 7h9l4-7-4-8zm107 21h-13l-6 11 6 10h13l6-10-6-11zm12-13h-6l-3 5 3 6h6l4-6-4-5zm-17-8h-9l-4 8 4 7h9l4-7-4-8zm107 21h-12l-6 11 6 10h12l6-10-6-11zm13-13h-7l-3 5 3 6h7l3-6-3-5zm-18-8h-8l-4 8 4 7h8l5-7-5-8zm108 21h-13l-6 11 6 10h13l6-10-6-11zm12-13h-6l-4 5 4 6h6l3-6-3-5zm-17-8h-9l-4 8 4 7h9l4-7-4-8zm102 21h-12l-6 11 6 10h12l6-10-6-11zm13-13h-7l-3 5 3 6h7l3-6-3-5zm-18-8h-8l-5 8 5 7h8l5-7-5-8zm109 21h-13l-6 11 6 10h13l6-10-6-11zm12-13h-6l-4 5 4 6h6l3-6-3-5zm-17-8h-9l-4 8 4 7h9l4-7-4-8zm103 21h-12l-7 11 7 10h12l6-10-6-11zm12-13h-6l-3 5 3 6h6l4-6-4-5zm-17-8h-8l-5 8 5 7h8l4-7-4-8zm75 21h-12l-6 11 6 10h12l6-10-6-11zm13-13h-7l-3 5 3 6h7l3-6-3-5zm-18-8h-8l-5 8 5 7h8l5-7-5-8zm139 21h-13l-6 11 6 10h13l6-10-6-11zm12-13h-6l-4 5 4 6h6l3-6-3-5zm-17-8h-9l-4 8 4 7h9l4-7-4-8zm74 21h-13l-6 11 6 10h13l6-10-6-11zm12-13h-6l-3 5 3 6h6l3-6-3-5zm-17-8h-9l-4 8 4 7h9l4-7-4-8zm107 21h-13l-6 11 6 10h13l6-10-6-11zm12-13h-6l-4 5 4 6h6l3-6-3-5zm-17-8h-9l-4 8 4 7h9l4-7-4-8zm105 21h-13l-6 11 6 10h13l6-10-6-11zm12-13h-6l-3 5 3 6h6l3-6-3-5zm-17-8h-9l-4 8 4 7h9l4-7-4-8zm107 21h-13l-6 11 6 10h13l6-10-6-11zm13-13h-6l-3 5 3 6h6l3-6-3-5zm-18-8h-9l-4 8 4 7h9l4-7-4-8zm106 21h-12l-7 11 7 10h12l6-10-6-11zm13-13h-6l-3 5 3 6h6l4-6-4-5zm-18-8h-8l-5 8 5 7h8l4-7-4-8zm105 21h-12l-6 11 6 10h12l6-10-6-11zm14-13h-7l-3 5 3 6h7l3-6-3-5zm-19-8h-8l-5 8 5 7h8l5-7-5-8zm107 21h-12l-7 11 7 10h12l6-10-6-11zm13-13h-6l-3 5 3 6h6l4-6-4-5zm-18-8h-8l-5 8 5 7h8l4-7-4-8zm108 21h-13l-6 11 6 10h13l6-10-6-11zm13-13h-6l-4 5 4 6h6l3-6-3-5zm-18-8h-9l-4 8 4 7h9l4-7-4-8z"
+          ></path>
+        </g>
+      </svg>
+    </section>
+    <!-- ============= Gallery Section starts here ======= -->
+
+    <section class="gallery-section section" id="gallery-section">
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 section-title">Gallery</h2>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+              style="background-image: url('assets/images/outdoor-view.png')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Outdoor View
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+              style="background-image: url('assets/images/bedroom-1.png')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Bedroom</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+              style="background-image: url('assets/images/bathroom-1.png')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Bathroom</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+              style="background-image: url('assets/images/setting-room.png')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">lounge</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+              style="background-image: url('assets/images/kitchen.png')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Kitchen</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+              style="background-image: url('assets/images/braai-area.png')"
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Braai Area
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg
+        preserveAspectRatio="xMidYMax slice"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 2000 76"
+      >
+        <g fill="%23000000">
+          <path
+            d="M1944 36l5-15 7-21h38l6 20v20l-25 19-31-23zm-61 23l31-23-11-36h-39l-11 36 30 23z"
+          ></path>
+          <path d="M0 0h2000v21H0z"></path>
+          <path
+            opacity=".5"
+            d="M1916 55l10 11 15-4 4-15-11-10-14 4-4 14z"
+          ></path>
+          <path opacity=".75" d="M1987 70l7-4-1-8-7-3-6 4v8l7 3z"></path>
+          <path d="M1952 69l8 6 9-4 1-10-8-6-9 4-1 10z"></path>
+          <path opacity=".75" d="M1897 71l7-4-1-8-7-3-7 4 1 8 7 3z"></path>
+          <path
+            d="M1861 70l8 6 9-4 2-10-8-6-10 4-1 10zm53-50l11 11 14-4 4-14-10-11-15 4-4 14zm-112 39l30-23-11-36h-38l-12 36 31 23zm-92 0l31-23-12-36h-38l-11 36 30 23zm32-4l11 11 15-4 4-15-11-10-15 4-4 14z"
+          ></path>
+          <path opacity=".75" d="M1328 53l7 7 8-3 2-8-6-6-8 2-3 8z"></path>
+          <path opacity=".5" d="M1664 55l7 7 9-3 3-9-7-7-10 2-2 10z"></path>
+          <path opacity=".75" d="M1814 70l7-4-1-8-7-3-7 4 1 8 7 3z"></path>
+          <path
+            d="M1843 38l7-4-1-8-7-3-7 5 1 7 7 3zm-64 31l8 6 9-4 1-10-8-6-9 4-1 10z"
+          ></path>
+          <path opacity=".5" d="M1834 59l8 6 9-4 1-10-8-6-9 4-1 10z"></path>
+          <path
+            d="M1724 71l6-4v-8l-8-3-6 4 1 8 7 3zm-36-1l8 6 9-4 1-10-8-6-9 4-1 10zm53-50l11 11 14-4 4-14-11-11-14 4-4 14zm-104 39l31-23-12-36h-38l-12 36 31 23zm-91 0l31-23-12-36h-38l-12 36 31 23z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1578 55l11 11 14-4 4-15-10-10-15 4-4 14z"
+          ></path>
+          <path
+            d="M1650 70l6-4-1-8-7-3-6 4 1 8 7 3zm-36-1l8 6 9-4 1-10-8-6-9 4-1 10zm-54 2l6-4-1-8-7-3-6 4 1 8 7 3zm-36-1l8 6 9-4 1-10-8-6-9 4-1 10zm53-50l10 11 15-4 4-14-11-11-14 4-4 14zm-113 39l31-23-12-36h-38l-12 36 31 23zm-91 0l31-23-12-36h-38l-12 36 31 23zm32-4l11 11 14-4 4-15-11-10-14 4-4 14zm72 15l6-4-1-8-7-3-6 4 1 8 7 3z"
+          ></path>
+          <path opacity=".75" d="M1506 38l6-4-1-8-7-3-6 5 1 7 7 3z"></path>
+          <path opacity=".5" d="M1441 69l8 6 9-4 1-10-8-6-9 4-1 10z"></path>
+          <path
+            d="M1496 59l8 6 9-4 1-10-8-6-9 4-1 10zm-109 12l6-4-1-8-7-3-6 4v8l8 3zm-36-1l8 6 9-4 1-10-8-6-9 4-1 10zm52-50l11 11 15-4 4-14-11-11-15 4-4 14zm-103 39l31-23-12-36h-38l-12 36 31 23zm-92 0l31-23-11-36h-39l-11 36 30 23zm33-4l10 11 15-4 4-15-11-10-14 4-4 14zm71 15l7-4-1-8-7-3-6 4v8l7 3z"
+          ></path>
+          <path opacity=".75" d="M1277 69l8 6 9-4 1-10-8-6-9 4-1 10z"></path>
+          <path
+            d="M1222 71l7-4-1-8-7-3-7 4 1 8 7 3zm-36-1l8 6 9-4 2-10-8-6-10 4-1 10zm53-50l11 11 14-4 4-14-10-11-15 4-4 14zm-112 39l30-23-11-36h-38l-12 36 31 23zm-92 0l31-23-12-36h-38l-11 36 30 23z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1067 55l11 11 15-4 4-15-11-10-15 4-4 14z"
+          ></path>
+          <path
+            d="M1139 70l7-4-1-8-7-3-7 4 1 8 7 3zm29-32l7-4-1-8-7-3-7 5 1 7 7 3zm-64 31l8 6 9-4 1-10-8-6-9 4-1 10z"
+          ></path>
+          <path opacity=".75" d="M1159 59l8 6 9-4 1-10-8-6-9 4-1 10z"></path>
+          <path d="M988 59l8 6 9-4 1-10-8-6-9 4-1 10z"></path>
+          <path opacity=".75" d="M651 59l8 6 9-4 1-10-8-6-9 4-1 10z"></path>
+          <path
+            d="M315 59l8 6 9-4 1-10-8-6-9 4-1 10zm734 12l6-4v-8l-8-3-6 4 1 8 7 3zm-36-1l8 6 9-4 1-10-8-6-9 4-1 10zm53-50l11 11 14-4 4-14-11-11-14 4-4 14zM962 59l31-23-12-36h-38l-12 36 31 23zm-91 0l31-23-12-36h-38l-12 36 31 23z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M903 55l11 11 14-4 4-15-10-10-15 4-4 14z"
+          ></path>
+          <path
+            d="M975 70l6-4-1-8-7-3-6 4 1 8 7 3zm-36-1l8 6 9-4 1-10-8-6-9 4-1 10z"
+          ></path>
+          <path opacity=".5" d="M885 71l6-4-1-8-7-3-6 4 1 8 7 3z"></path>
+          <path
+            d="M849 70l8 6 9-4 1-10-8-6-9 4-1 10zm53-50l10 11 15-4 4-14-11-11-14 4-4 14zM789 59l31-23-12-36h-38l-12 36 31 23zm-91 0l31-23-12-36h-38l-12 36 31 23zm32-4l11 11 14-4 4-15-11-10-14 4-4 14zm72 15l6-4-1-8-7-3-6 4 1 8 7 3zm29-32l6-4-1-8-7-3-6 5 1 7 7 3z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M766 69l8 6 9-4 1-10-8-6-9 4-1 10zm55-10l8 6 9-4 1-10-8-6-9 4-1 10z"
+          ></path>
+          <path
+            d="M712 71l6-4-1-8-7-3-6 4v8l8 3zm-36-1l8 6 9-4 1-10-8-6-9 4-1 10zm52-50l11 11 15-4 4-14-11-11-15 4-4 14zM625 59l31-23-12-36h-38l-12 36 31 23zm-92 0l31-23-11-36h-39l-11 36 30 23zm33-4l10 11 15-4 4-15-11-10-14 4-4 14zm71 15l7-4-1-8-7-3-6 4v8l7 3zm-35-1l8 6 9-4 1-10-8-6-9 4-1 10zm-55 2l7-4-1-8-7-3-7 4 1 8 7 3z"
+          ></path>
+          <path opacity=".75" d="M511 70l8 6 9-4 2-10-8-6-10 4-1 10z"></path>
+          <path
+            d="M564 20l11 11 14-4 4-14-10-11-15 4-4 14zM452 59l30-23-11-36h-38l-12 36 31 23zm-92 0l31-23-12-36h-38l-11 36 30 23z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M392 55l11 11 15-4 4-15-11-10-15 4-4 14z"
+          ></path>
+          <path d="M464 70l7-4-1-8-7-3-7 4 1 8 7 3z"></path>
+          <path opacity=".5" d="M493 38l7-4-1-8-7-3-7 5 1 7 7 3z"></path>
+          <path
+            d="M429 69l8 6 9-4 1-10-8-6-9 4-1 10zm55-10l8 6 9-4 1-10-8-6-9 4-1 10z"
+          ></path>
+          <path opacity=".75" d="M374 71l6-4v-8l-8-3-6 4 1 8 7 3z"></path>
+          <path
+            d="M338 70l8 6 9-4 1-10-8-6-9 4-1 10zm53-50l11 11 14-4 4-14-11-11-14 4-4 14zM287 59l31-23-12-36h-38l-12 36 31 23zm-91 0l31-23-12-36h-38l-12 36 31 23z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M228 55l11 11 14-4 4-15-10-10-15 4-4 14z"
+          ></path>
+          <path
+            d="M300 70l6-4-1-8-7-3-6 4 1 8 7 3zm-36-1l8 6 9-4 1-10-8-6-9 4-1 10zm-54 2l6-4-1-8-7-3-6 4 1 8 7 3z"
+          ></path>
+          <path opacity=".75" d="M174 70l8 6 9-4 1-10-8-6-9 4-1 10z"></path>
+          <path
+            d="M227 20l10 11 15-4 4-14-11-11-14 4-4 14zM114 59l31-23-12-36H95L83 36l31 23zM0 42V12L4 0h38l7 21 5 15-31 23L0 42z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M55 55l11 11 14-4 4-15-11-10-14 4-4 14z"
+          ></path>
+          <path opacity=".5" d="M127 70l6-4-1-8-7-3-6 4 1 8 7 3z"></path>
+          <path opacity=".75" d="M156 38l6-4-1-8-7-3-6 5 1 7 7 3z"></path>
+          <path
+            d="M91 69l8 6 9-4 1-10-8-6-9 4-1 10zm55-10l8 6 9-4 1-10-8-6-9 4-1 10zM37 71l6-4-1-8-7-3-6 4v8l8 3z"
+          ></path>
+          <path opacity=".5" d="M1 70l8 6 9-4 1-10-8-6-9 4-1 10z"></path>
+          <path d="M53 20l11 11 15-4 4-14L72 2 57 6l-4 14z"></path>
+        </g>
+      </svg>
+    </section>
+    <!-- ============= Gallery Section ends here ======= -->
+    <!-- ============= About Section starts here ======= -->
+    <section class="about-section section">
+      <div class="container px-4 py-5" id="icon-grid">
+        <h2 class="pb-2 section-title">About Us</h2>
+        <div class="about-inner-container">
+          <div class="about-content-section">
+            <h3>Welcome to Eagles View Kungwini</h3>
+            <p>
+              Located in Bronkhorstspruit, Gauteng, and just a short walk from
+              Bronkhorstspruit Dam, Eagles View Kungwini offers a tranquil
+              escape for families and couples.
+            </p>
+            <p>
+              Our 7 comfortable units feature en-suite bathrooms, a shared
+              kitchen, lounge, patio, and access to amenities like a pool, braai
+              facilities, Wi-Fi, and secure parking.
+            </p>
+            <div class="large-screen-content">
+              <p>
+                Enjoy nearby activities such as bird watching, fishing, cycling,
+                and horseback riding. Whether you’re seeking relaxation or
+                adventure, Eagles View Kungwini is your perfect getaway.
+              </p>
+              <p>
+                Let us take care of your every need and make your stay truly
+                unforgettable.
+              </p>
+            </div>
+          </div>
+          <div class="about-image-section">
+            <img
+              src="assets/images/about-img.png"
+              alt="Outdoor Buffalo Park Lodge image"
+              height="300"
+              width="300"
+            />
+          </div>
+        </div>
+      </div>
+      <svg
+        class="bottom-about-svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 200"
+      >
+        <path fill-opacity="1" d="M0,288L1440,32L1440,320L0,320Z"></path>
+      </svg>
+    </section>
+    <!-- ============= About Section ends here ======= -->
+    <!-- ============= Testimonial Section start here ======= -->
+    <div class="testimonial-section section">
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 section-title">Testimonial</h2>
+        <div class="container">
+          <div class="swiper testimonial-carousel">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonial-item">
+                <p>
+                  " Since Our arrival late Friday afternoon until our Departure
+                  on Sunday Morning We have been met with the utmost sincerety
+                  and the service we Receive from all staff"
+                </p>
+                <h4>— Gerrit Malan</h4>
+              </div>
+              <div class="swiper-slide testimonial-item">
+                <p>
+                  "It was a 40th birthday celebration and the venue was perfect
+                  for the occasion. Highly recomendable."
+                </p>
+                <h4>— Willie Scholtz</h4>
+              </div>
+              <div class="swiper-slide testimonial-item">
+                <p>
+                  "We enjoyed our stay at Eagles View. Jared and Precious were
+                  very helpful and accommodating! We felt very welcome and taken
+                  care of."
+                </p>
+                <h4>— Taren Govender</h4>
+              </div>
+              <div class="swiper-slide testimonial-item">
+                <p>"Newly remodeled book in advanced"</p>
+                <h4>— Fraser Vermaak</h4>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <svg
+        class="bottom-testimonial-svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 200"
+      >
+        <path fill-opacity="1" d="M0,288L1440,32L1440,320L0,320Z"></path>
+      </svg>
+    </div>
+    <!-- ============= TestimonialSection ends here ======= -->
+    <!-- ============= Footer Section start here ======= -->
+    <footer class="footer-section section" class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3 page-navigation">
+          <h5>Page navigation</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Gallery</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Booking</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3 footer-contact">
+          <h5>Contact</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <address>
+                Kungwini Ranch, 21 witkruis arend str, Kungwini Country Estate,
+                Bronkhorstspruit, 1020
+              </address>
+            </li>
+            <li class="nav-item mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope-at"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"
+                />
+                <path
+                  d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
+                />
+              </svg>
+              <a href="mailto:eagleviewkungwini.co.za"
+                >info@eagleviewkungwini.co.za</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-telephone-x-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm9.261 1.135a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+              <p>Tel : 0834113931</p>
+            </li>
+            <li class="nav-item mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-printer-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1"
+                />
+                <path
+                  d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"
+                />
+              </svg>
+              <p>Fax : ------</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden"
+                >Email address</label
+              >
+              <input
+                id="newsletter1"
+                type="text"
+                class="form-control"
+                placeholder="Email address"
+              />
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+      >
+        <p>
+          © 2024 Eagle View Kungwini. All rights reserved. Developed by KN
+          Mohlala
+        </p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#">
+              <!-- Twitter Icon (Feather) -->
+              <svg
+                class="social-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000"
+                class="bi bi-twitter-x"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#">
+              <!-- Instagram Icon (Feather) -->
+              <svg
+                class="social-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#c13584"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#">
+              <!-- Facebook Icon (Feather) -->
+              <svg
+                class="social-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="privacy.html" class="nav-link p-0 text-body-secondary"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href="terms.html" class="nav-link p-0 text-body-secondary"
+              >Terms & Conditions</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="js/jquery.3.7.1.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Swiper bundle JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Custome Swiper JS -->
+    <script src="js/swiper.js"></script>
+
+    <!-- Index JS -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
