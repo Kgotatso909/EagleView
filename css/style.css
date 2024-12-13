@@ -72,7 +72,7 @@
 
 /* facility starts here */
 .facility-section {
-  background-color: var(--bg-primary-dark);
+  background-color: var(--bg-secondary-dark);
   color: var(--black);
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
