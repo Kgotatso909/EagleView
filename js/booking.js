@@ -1,4 +1,7 @@
+const bookingForm = document.getElementById("bookingForm");
+
 // Booking: initialize the Date Picker
+
 
 document.addEventListener("DOMContentLoaded", () => {
   flatpickr("#checkin", {

@@ -1,5 +1,3 @@
-const bookingForm = document.getElementById("bookingForm");
-
 window.addEventListener("scroll", () => {
   const navbar = document.getElementById("navbar");
   if (window.innerWidth >= 994) {

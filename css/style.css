@@ -72,6 +72,7 @@
 
 /* Hero section starts here */
 
+
 .hero {
   position: relative;
   display: flex;
@@ -83,6 +84,9 @@
   background-attachment: fixed;
   background-position: center;
   min-height: 100dvh;
+  padding: 100px 20px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .hero-bg-color {
@@ -99,7 +103,8 @@
   z-index: 1;
 }
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: var(--white);
   font-family: var(--title-font);
@@ -107,7 +112,8 @@
 }
 
 .hero p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
   color: var(--white);
 }
 
@@ -120,7 +126,8 @@
 
 .hero .btn-contact,
 .hero .btn-book {
-  padding: 1rem 2rem;
+  padding: 15px 30px;
+  font-size: 1.2rem;
   border-radius: 30px;
 }
 
