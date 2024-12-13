@@ -8,9 +8,9 @@
 
 .gallery-page-section {
   background-color: var(--bg-secondary-light);
+}
 
-  svg {
-    background-color: var(--bg-primary-dark);
-    fill: var(--bg-secondary-light);
-  }
+.gallery-page-section svg {
+  background-color: var(--bg-primary-dark);
+  fill: var(--bg-secondary-light);
 }

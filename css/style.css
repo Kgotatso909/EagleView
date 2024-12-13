@@ -70,80 +70,6 @@
   border-bottom: 3px solid blue;
 }
 
-/* Hero section starts here */
-
-
-.hero {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../assets/images/hero-lg-screen.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  min-height: 100dvh;
-  padding: 100px 20px;
-  color: #fff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
-
-.hero-bg-color {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #00000085;
-}
-
-.hero-content {
-  z-index: 1;
-}
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: var(--white);
-  font-family: var(--title-font);
-  text-transform: capitalize;
-}
-
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-  color: var(--white);
-}
-
-.hero .btn-book {
-  background-color: var(--bg-secondary-dark);
-  color: var(--text-color);
-  border: none;
-  box-shadow: none;
-}
-
-.hero .btn-contact,
-.hero .btn-book {
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  border-radius: 30px;
-}
-
-.hero .btn-book:hover {
-  border: 2px solid var(--bg-secondary-dark);
-  background-color: transparent;
-  color: var(--bg-primary-dark);
-  box-shadow: none;
-}
-
-.hero .btn-contact:hover {
-  color: var(--text-color);
-  border: none;
-  box-shadow: none;
-}
-
 /* facility starts here */
 .facility-section {
   background-color: var(--bg-primary-dark);
@@ -151,11 +77,11 @@
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
   font-size: 1.23rem;
+}
 
-  svg {
-    fill: var(--bg-primary-dark);
-    background-color: var(--bg-secondary-dark);
-  }
+.facility-section svg {
+  fill: var(--bg-primary-dark);
+  background-color: var(--bg-secondary-dark);
 }
 
 .facility-box {
@@ -211,14 +137,14 @@
 .gallery-section {
   position: relative;
   background-color: var(--bg-secondary-dark);
+}
 
-  svg {
-    background-color: var(--bg-primary-dark);
-    fill: var(--bg-secondary-dark);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
+.gallery-section svg {
+  background-color: var(--bg-primary-dark);
+  fill: var(--bg-secondary-dark);
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .gallery-section .card-cover {

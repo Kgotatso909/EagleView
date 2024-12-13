@@ -10,52 +10,6 @@
   }
 }
 
-/* Media query for changing hero background image for 880px screen */
-@media (max-width: 880px) {
-  .hero {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../assets/images/hero-sm-screen-1.png") !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100dvh;
-  }
-}
-
-@media (min-width: 994px) {
-  .navbar {
-    background-color: transparent !important;
-    transition: background-color 0.3s ease;
-    color: #352d2d !important;
-    box-shadow: none !important;
-  }
-
-  .navbar .nav-link {
-    color: #fff !important;
-  }
-
-  .navbar.scrolled {
-    background-color: var(--bg-primary-dark) !important;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1) !important;
-  }
-
-  .navbar-brand {
-    color: var(--white) !important;
-  }
-
-  .navbar.scrolled .navbar-brand {
-    color: #000 !important;
-  }
-
-  .navbar.scrolled .nav-link {
-    color: #000 !important;
-  }
-}
-
 @media (max-width: 585px) {
   .facility-section {
     display: none !important;

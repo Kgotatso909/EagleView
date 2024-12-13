@@ -1,14 +1,14 @@
 .booking-section {
   position: relative;
   background-color: var(--bg-secondary-light);
+}
 
-  svg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: var(--bg-primary-dark);
-    fill: var(--bg-secondary-light);
-  }
+.booking-section svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bg-primary-dark);
+  fill: var(--bg-secondary-light);
 }
 
 .toast {
