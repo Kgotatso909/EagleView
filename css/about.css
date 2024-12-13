@@ -3,14 +3,6 @@
 @import url("./partials/variables.css");
 @import url("./mediaquery.css");
 
-.hero {
-  min-height: 50vh;
-  background-image: url("/assets/images/hero-lg-screen.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
 .page-about-section svg {
     background-color: var(--bg-secondary-light);
     fill: var(--bg-primary-dark);
