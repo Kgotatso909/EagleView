@@ -70,9 +70,10 @@
   border-bottom: 3px solid blue;
 }
 
+
 /* facility starts here */
 .facility-section {
-  background-color: var(--bg-secondary-dark);
+  background-color: var(--bg-primary-dark);
   color: var(--black);
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
