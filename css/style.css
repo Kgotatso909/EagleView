@@ -36,6 +36,7 @@
 /* Hero section for pages */
 .hero-section {
   position: relative; 
+  height: 80dvh;
   background-image: url("../assets/images/hero-lg-screen.webp");
   background-attachment: fixed;
   background-size: cover;
