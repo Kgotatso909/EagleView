@@ -31,17 +31,18 @@
   width: 100%;
   height: 100%;
   background-color: #00000085;
+  z-index: 98;
+
 }
 
 .hero-content {
-  z-index: 9999;
+  z-index: 99;
 }
 
 .hero-section .hero-title {
   font-size: 3rem;
   margin-bottom: 20px;
-  z-index: 999;
-  color:red;
+
 }
 
 .hero-section .hero-description {
