@@ -37,6 +37,17 @@ function hideToast() {
 
 bookingForm.addEventListener("submit", function (event) {
   event.preventDefault();
+
+  // Basic Validation
+  if (!bookingForm.checkValidity()) {
+    bookingForm.classList.add("was-validated");
+    return;
+  }
+
+  // Show Toast
   showToast();
+
+  // Reset Form
   bookingForm.reset();
+  bookingForm.classList.remove("was-validated");
 });
