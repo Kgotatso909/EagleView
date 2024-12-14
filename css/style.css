@@ -33,13 +33,14 @@
   background-color: #00000085;
 }
 
-.hero-section .hero-content {
+.hero-content {
   z-index: 9999;
 }
 
 .hero-section .hero-title {
   font-size: 3rem;
   margin-bottom: 20px;
+  z-index: 999;
 }
 
 .hero-section .hero-description {
