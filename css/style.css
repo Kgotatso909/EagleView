@@ -13,7 +13,7 @@
 
 /* Hero section for pages */
 .hero-section {
-  position: relative;
+  position: relative; 
   background-image: url("../assets/images/hero-lg-screen.webp");
   background-attachment: fixed;
   background-size: cover;
@@ -31,18 +31,17 @@
   width: 100%;
   height: 100%;
   background-color: #00000085;
-  z-index: 98;
-
+  z-index: 0;
 }
 
 .hero-content {
-  z-index: 99;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-section .hero-title {
   font-size: 3rem;
   margin-bottom: 20px;
-
 }
 
 .hero-section .hero-description {
@@ -71,21 +70,6 @@
   }
 }
 
-@media (max-width: 480px) {
-  .hero-section .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-section .hero-description {
-    font-size: 1.1rem;
-  }
-
-  .hero-section .btn-primary {
-    padding: 10px 20px; 
-    font-size: 1rem;
-    border-radius: 25px; 
-  }
-}
 
 /* start navigation */
 .header_area .main-menu .navbar {
