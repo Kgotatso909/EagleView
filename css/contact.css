@@ -6,11 +6,13 @@
 /* General Section Styling */
 .contact-form-section {
   position: relative;
-  padding-bottom: 40px;
   min-width: 100%;
   background-color: #f8f9fa;
   border-radius: 8px;
+}
 
+.g-4 {
+  padding-bottom: 40px;
 }
 
 .contact-form-section svg {
