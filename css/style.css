@@ -281,7 +281,7 @@
 /* Booking page */
 .booking-section {
   position: relative;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   background-color: var(--bg-secondary-light);
 }
 
