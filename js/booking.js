@@ -35,36 +35,15 @@ function hideToast() {
   toast.classList.remove("show");
 }
 
-// Form Validation
-function validateDates() {
-  const checkin = document.getElementById("checkin").value;
-  const checkout = document.getElementById("checkout").value;
-
-  
-  if (!checkin || !checkout) {
-    return false;
-  }
-
-  
-  const checkinDate = new Date(checkin);
-  const checkoutDate = new Date(checkout);
-
-  if (checkoutDate <= checkinDate) {
-    return false;
-  }
-
-  return true;
-}
-
 // Form Submission
 bookingForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
- 
+  // Basic Validation
   if (!bookingForm.checkValidity() || !validateDates()) {
     bookingForm.classList.add("was-validated");
 
-    s
+    // Display custom error for date fields
     if (!validateDates()) {
       const checkoutInput = document.getElementById("checkout");
       const checkoutError = document.getElementById("checkoutError");
