@@ -2,41 +2,46 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
   const toast = document.getElementById("submissionToast");
 
+  // Handle form submission
   form.addEventListener("submit", (event) => {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault(); // Prevent default form submission
 
-    // Form field values
+    // Reset previous errors
+    resetErrors();
+
+    // Get form field values
     const username = document.getElementById("username").value.trim();
     const email = document.getElementById("userEmail").value.trim();
     const subject = document.getElementById("emailSubject").value.trim();
     const message = document.getElementById("userMessage").value.trim();
 
+    let isValid = true;
+
     // Validate form fields
-    if (!username || !email || !subject || !message) {
-      alert("All fields are required!"); // Alert user if any field is empty
-      return;
+    if (!username) {
+      setError("username", "usernameError", "Please enter your name.");
+      isValid = false;
+    }
+    if (!email || !validateEmail(email)) {
+      setError("userEmail", "userEmailError", "Please enter a valid email address.");
+      isValid = false;
+    }
+    if (!subject) {
+      setError("emailSubject", "emailSubjectError", "Please enter a subject.");
+      isValid = false;
+    }
+    if (!message) {
+      setError("userMessage", "userMessageError", "Please enter your message.");
+      isValid = false;
     }
 
-    if (!validateEmail(email)) {
-      console.log("invalid image");
-      return;
+    // If form is valid, show success toast and reset form
+    if (isValid) {
+      showToast();
+      console.log(username, email, subject, message);
+      form.reset();
     }
-
-    // Show the toast notification on success
-    showToast();
-
-    console.log(username, email, subject, message);
-
-    // Reset the form
-    form.reset();
   });
-
-  // Email validation function
-  // Email validation function
-  function validateEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  }
 
   // Show toast
   function showToast() {
@@ -47,5 +52,32 @@ document.addEventListener("DOMContentLoaded", () => {
   // Hide toast
   function hideToast() {
     toast.classList.remove("show"); // Hide the toast
+  }
+
+  // Reset error messages and classes
+  function resetErrors() {
+    const fields = ["username", "userEmail", "emailSubject", "userMessage"];
+    fields.forEach((field) => {
+      const input = document.getElementById(field);
+      const error = document.getElementById(`${field}Error`);
+      input.classList.remove("is-invalid");
+      error.style.display = "none";
+    });
+  }
+
+  // Set error for a field
+  function setError(inputId, errorId, errorMessage) {
+    const input = document.getElementById(inputId);
+    const error = document.getElementById(errorId);
+
+    input.classList.add("is-invalid");
+    error.textContent = errorMessage;
+    error.style.display = "block"; // Show the error message
+  }
+
+  // Email validation function
+  function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
   }
 });
