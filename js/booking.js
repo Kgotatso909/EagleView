@@ -34,6 +34,27 @@ function hideToast() {
   toast.style.display = "none";
   toast.classList.remove("show");
 }
+// Date vaidation
+function validateDates() {
+  const checkin = document.getElementById("checkin").value;
+  const checkout = document.getElementById("checkout").value;
+
+  // Check if both checkin and checkout dates are selected
+  if (!checkin || !checkout) {
+    return false;
+  }
+
+  // Convert to Date objects for comparison
+  const checkinDate = new Date(checkin);
+  const checkoutDate = new Date(checkout);
+
+  // Check if check-out is before check-in
+  if (checkoutDate <= checkinDate) {
+    return false;
+  }
+
+  return true;
+}
 
 // Form Submission
 bookingForm.addEventListener("submit", function (event) {
