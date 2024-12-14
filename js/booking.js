@@ -66,28 +66,30 @@ bookingForm.addEventListener("submit", function (event) {
 
     s
     if (!validateDates()) {
-      const checkinInput = document.getElementById("checkin");
       const checkoutInput = document.getElementById("checkout");
       const checkoutError = document.getElementById("checkoutError");
-      const checkinError = document.getElementById("checkoutError");
 
-      checkinInput.classList.add("is-invalid")
+      // Add the invalid class to checkout field
       checkoutInput.classList.add("is-invalid");
 
-      checkinError.style.display = "block";
+      // Display error message
       checkoutError.style.display = "block";
     }
 
     return;
   }
 
+  // Show Toast
   showToast();
 
+  // Reset Form
   bookingForm.reset();
   bookingForm.classList.remove("was-validated");
 
-  checkinInput.classList.remove("is-invalid");
+  // Hide error message after successful submission
+  const checkoutInput = document.getElementById("checkout");
+  const checkoutError = document.getElementById("checkoutError");
+
   checkoutInput.classList.remove("is-invalid");
-  checkinError.style.display = "none"
   checkoutError.style.display = "none";
 });
