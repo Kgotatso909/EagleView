@@ -1,4 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const contactForm = document.querySelector('.form-container');
+  const mapContainer = document.querySelector('.map-container');
+
+  const setMapHeight = () => {
+    const formHeight = contactForm.offsetHeight;
+    mapContainer.style.height = `${formHeight}px`;
+  };
+
+  // Set the map height when the page loads
+  setMapHeight();
+
+  // Optional: Adjust height if window is resized
+  window.addEventListener('resize', setMapHeight);
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
   const toast = document.getElementById("submissionToast");
 
