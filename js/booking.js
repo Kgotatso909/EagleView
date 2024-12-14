@@ -21,19 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Show Toast
 function showToast() {
-  const toast = document.getElementById("submissionToast");
-  toast.style.display = "block";
-  toast.classList.add("show");
+  const toast = new bootstrap.Toast(document.getElementById('submissionToast'));
+  toast.show(); // Show the toast
 
+  // Optional: Hide the toast after 5 seconds
   setTimeout(() => {
-    hideToast();
+    toast.hide();
   }, 5000);
-}
-
-function hideToast() {
-  const toast = document.getElementById("submissionToast");
-  toast.style.display = "none";
-  toast.classList.remove("show");
 }
 
 // Form Submission
