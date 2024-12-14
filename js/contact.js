@@ -80,4 +80,30 @@ document.addEventListener("DOMContentLoaded", () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   }
+
+  // Listen for input events to remove error messages once corrected
+  const fields = ["username", "userEmail", "emailSubject", "userMessage"];
+  fields.forEach((field) => {
+    const input = document.getElementById(field);
+
+    input.addEventListener("input", () => {
+      // Remove error message and reset the field if the user starts typing correctly
+      if (input.value.trim() !== "") {
+        if (field === "userEmail" && !validateEmail(input.value.trim())) {
+          setError("userEmail", "userEmailError", "Please enter a valid email address.");
+        } else {
+          removeError(input, `${field}Error`);
+        }
+      } else {
+        removeError(input, `${field}Error`);
+      }
+    });
+  });
+
+  // Remove error messages and reset the input field's validation
+  function removeError(input, errorId) {
+    input.classList.remove("is-invalid");
+    const error = document.getElementById(errorId);
+    error.style.display = "none"; // Hide the error message
+  }
 });
