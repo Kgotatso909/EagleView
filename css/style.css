@@ -33,6 +33,10 @@
   background-color: #00000085;
 }
 
+.hero-section .hero-content {
+  z-index: 1;
+}
+
 .hero-section .hero-title {
   font-size: 3rem;
   margin-bottom: 20px;
