@@ -34,6 +34,7 @@ function hideToast() {
   toast.style.display = "none";
   toast.classList.remove("show");
 }
+
 // Date vaidation
 function validateDates() {
   const checkin = document.getElementById("checkin").value;
