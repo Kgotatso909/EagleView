@@ -1,8 +1,6 @@
 const bookingForm = document.getElementById("bookingForm");
 
-// Booking: initialize the Date Picker
-
-
+// Initialize the Date Pickers
 document.addEventListener("DOMContentLoaded", () => {
   flatpickr("#checkin", {
     minDate: "today",
@@ -21,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Showing Toast
+// Show Toast
 function showToast() {
   const toast = document.getElementById("submissionToast");
   toast.style.display = "block";
@@ -38,8 +36,20 @@ function hideToast() {
   toast.classList.remove("show");
 }
 
+// Form Submission
 bookingForm.addEventListener("submit", function (event) {
   event.preventDefault();
+
+  // Basic Validation
+  if (!bookingForm.checkValidity()) {
+    bookingForm.classList.add("was-validated");
+    return;
+  }
+
+  // Show Toast
   showToast();
+
+  // Reset Form
   bookingForm.reset();
+  bookingForm.classList.remove("was-validated");
 });
