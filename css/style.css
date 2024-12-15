@@ -63,11 +63,13 @@
 }
 
 .hero-section .hero-title {
+  font-family: var(--title-font);
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
 .hero-section .hero-description {
+  font-family: var(--page-font);
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
@@ -106,7 +108,6 @@
 .header_area .navbar-brand {
   color: var(--black);
   font-family: var(--title-font);
-  font-style: italic;
 }
 
 .header_area .main-menu .nav-item .nav-link {
