@@ -1,13 +1,15 @@
-window.addEventListener("scroll", () => {
-  const navbar = document.getElementById("navbar");
-  if (window.innerWidth >= 994) {
-    if (window.scrollY >= 50) {
-      navbar.classList.add("scrolled", "navbar-light");
-    } else {
-      navbar.classList.remove("scrolled", "navbar-light");
+document.addEventListener("DOMContentLoaded",()=>{
+  window.addEventListener("scroll", () => {
+    const navbar = document.getElementById("navbar");
+    if (window.innerWidth >= 994) {
+      if (window.scrollY >= 50) {
+        navbar.classList.add("scrolled", "navbar-light");
+      } else {
+        navbar.classList.remove("scrolled", "navbar-light");
+      }
     }
-  }
-});
+  });
+})
 
 // Toggle descriptions
 function toggleDescription(header) {

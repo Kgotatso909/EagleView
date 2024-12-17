@@ -1,5 +1,5 @@
 /* Import custome fonts from fonts.css file */
-@import url("./fonts.css");
+@import url("./partials/fonts.css");
 @import url("./partials/variables.css");
 @import url("./mediaquery.css");
 
@@ -137,6 +137,7 @@
 
 /* facility starts here */
 .facility-section {
+  position: relative;
   background-color: var(--bg-primary-dark);
   color: var(--black);
   font-family: "Courier New", Courier, monospace;
@@ -145,6 +146,9 @@
 }
 
 .facility-section svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   fill: var(--bg-primary-dark);
   background-color: var(--bg-secondary-dark);
 }
