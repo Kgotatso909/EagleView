@@ -1,0 +1,38 @@
+@import url("./fonts.css");
+/* CSS Variables */
+
+:root {
+  --bg-primary-light: #f2f2f0;
+  --bg-secondary-light: #d8d3bc;
+  --bg-primary-dark: #ebe8d8;
+  --bg-secondary-dark: #757260;
+  --text-color: #000000;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* font family variables */
+  --page-font: "Page font";
+  --title-font: "Title font";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-primary-dark);
+  color: var(--text-color);
+  font-family: var(--page-font);
+  font-size: 16px;
+}

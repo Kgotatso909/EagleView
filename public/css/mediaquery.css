@@ -1,0 +1,61 @@
+/* Home page about section break point for small screens */
+@media (max-width: 776px) {
+  .about-inner-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .large-screen-content {
+    display: none;
+  }
+}
+
+@media (max-width: 585px) {
+  .facility-section {
+    display: none !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .footer-section .row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/*
+ * Media query for about section
+ */
+@media (max-width: 845px) {
+  .contact-form-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 525px) {
+  .name-email-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* About us page */
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .about-inner-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image-container {
+    margin-top: 20px;
+  }
+}
