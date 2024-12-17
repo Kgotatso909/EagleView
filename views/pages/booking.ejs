@@ -1,31 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Book your stay at eagles View Kungwini. Choose from luxury rooms, select your dates, and make your special requests online."/>
+  <meta name="keywords" content="eagles View Kungwini, room booking, luxury lodge, Bronkhorstspruit, check-in, check-out, accommodations"/>
+  <meta property="og:title" content="Booking | eagles View Kungwini" />
+  <meta property="og:description" content="Easily book a room at eagles View Kungwini. Select your check-in and check-out dates, choose your room, and submit your booking request."/>
+  <meta property="og:image" content="URL to booking-related image" />
+  <%- include('../partials/_header.ejs') %>
+  <title>Booking | eagles View Kungwini</title>
+    
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+      <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="css/flatpickr.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LodgingReservation",
+          "name": "Room Booking | eagles View Kungwini",
+          "description": "Reserve your stay at eagles View Kungwini by selecting your check-in and check-out dates, room type, and number of guests.",
+          "url": "https://yourwebsite.com/booking",
+          "reservationStatus": "http://schema.org/Confirmed",
+          "provider": {
+            "@type": "LodgingBusiness",
+            "name": "eagles View Kungwini",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "21 Witkruis Arend St, Kungwini Country Estate",
+              "addressLocality": "Bronkhorstspruit",
+              "addressRegion": "Gauteng",
+              "postalCode": "1020",
+              "addressCountry": "ZA"
+            },
+            "telephone": "+27 834113931",
+            "email": "info@eaglesviewkungwini.co.za"
+          }
+        }
+      </script>
+</head>
+<body>
+  <header class="header_area">
+    <div class="main-menu">
+      <%- include('../partials/_navbar.ejs') %>
+      <div class="hero-section">
+        <div class="hero-bg-color"></div>
+        <div class="container text-center py-5 hero-content">
+          <h1 class="hero-title">Booking</h1>
+          <p class="hero-description">
+          Select your dates and reserve your room today!
+          </p>
+          <a href="#bookingForm" class="btn btn-primary btn-lg">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<div class="container mt-5">
-  <h2>Book Your Stay</h2>
-  <form action="/bookings" method="POST">
-    <div class="mb-3">
-      <label for="name" class="form-label">Your Name</label>
-      <input type="text" class="form-control" id="name" name="name" required>
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Your Email</label>
-      <input type="email" class="form-control" id="email" name="email" required>
-    </div>
-    <div class="mb-3">
-      <label for="checkin" class="form-label">Check-in Date</label>
-      <input type="date" class="form-control" id="checkin" name="checkin" required>
-    </div>
-    <div class="mb-3">
-      <label for="checkout" class="form-label">Check-out Date</label>
-      <input type="date" class="form-control" id="checkout" name="checkout" required>
-    </div>
-    <div class="mb-3">
-      <label for="room" class="form-label">Room</label>
-      <select class="form-select" id="room" name="room" required>
-        <option value="room1">Room 1</option>
-        <option value="room2">Room 2</option>
-        <option value="room3">Room 3</option>
-      </select>
-    </div>
-    <button type="submit" class="btn btn-primary">Confirm Booking</button>
-  </form>
-</div>
+  <%- include('../partials/_footer.ejs') %>
+</body>
+</html>
