@@ -62,7 +62,10 @@ exports.sendEmail = (req, res) => {
                 return res.send('Error sending message to client');
             }
             console.log('Client email sent: ' + info.response);
-            res.send('Message sent successfully');
+
+            // Redirect to the contact page after success
+            res.redirect('/contact#submissionToast');
         });
     });
 };
+
