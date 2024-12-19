@@ -6,11 +6,12 @@ const path = require('path');
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'moruditech@gmail.com', // Your email here
+        user: 'moruditech@gmail.com',  // Your email here
         pass: 'yrhh wzzz vfwv obri'  // Your app password here
     }
 });
 
+// Handle sending the email
 exports.sendEmail = (req, res) => {
     const { name, email, subject, message } = req.body;
 

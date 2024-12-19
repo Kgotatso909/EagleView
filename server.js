@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-const contactRoutes = require('./router/contact'); // Import the contact routes
+const contactRoutes = require('./routes/contact'); // Import contact route
 
 const app = express();
 const port = 3000;
@@ -14,14 +14,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views', 'pages'));
 
-// Use the contact routes
-app.use('/contact', contactRoutes);
+// Use the contact route (this maps all contact routes including /send-email to contactRoutes)
+app.use('/contact', contactRoutes); // This ensures all /contact routes are handled by contactRoutes
 
 // Home route (index)
 app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.get('/contact', (req, res) => {
+    res.render('contact');
+});
 // Start the server
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);

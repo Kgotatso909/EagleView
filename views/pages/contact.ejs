@@ -66,34 +66,33 @@
     <div class="row g-4">
       <!-- Contact Form -->
       <div class="col-lg-6">
-        <form id="contactForm" class="form-container p-4 shadow-sm rounded" action="/send-email" method="POST" novalidate>
-          <div class="form-floating mb-3">
-              <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required autocomplete="true" />
-              <label for="name">Your Name</label>
-              <div class="invalid-feedback" id="nameError">Please enter your name.</div>
-          </div>
-      
-          <div class="form-floating mb-3">
-              <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required />
-              <label for="email">Your Email</label>
-              <div class="invalid-feedback" id="emailError">Please enter a valid email address.</div>
-          </div>
-      
-          <div class="form-floating mb-3">
-              <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required />
-              <label for="subject">Subject</label>
-              <div class="invalid-feedback" id="subjectError">Please enter a subject.</div>
-          </div>
-      
-          <div class="form-floating mb-3">
-              <textarea id="message" name="message" class="form-control" placeholder="Your Message" style="height: 150px" required></textarea>
-              <label for="message">Your Message</label>
-              <div class="invalid-feedback" id="messageError">Please enter your message.</div>
-          </div>
-      
-          <button type="submit" class="btn btn-primary w-100">Send Message</button>
-      </form>
-      
+      <form id="contactForm" class="form-container p-4 shadow-sm rounded" action="/contact/send-email" method="POST" novalidate>
+        <div class="form-floating mb-3">
+            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required autocomplete="true" />
+            <label for="name">Your Name</label>
+            <div class="invalid-feedback" id="nameError">Please enter your name.</div>
+        </div>
+    
+        <div class="form-floating mb-3">
+            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required />
+            <label for="email">Your Email</label>
+            <div class="invalid-feedback" id="emailError">Please enter a valid email address.</div>
+        </div>
+    
+        <div class="form-floating mb-3">
+            <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required />
+            <label for="subject">Subject</label>
+            <div class="invalid-feedback" id="subjectError">Please enter a subject.</div>
+        </div>
+    
+        <div class="form-floating mb-3">
+            <textarea id="message" name="message" class="form-control" placeholder="Your Message" style="height: 150px" required></textarea>
+            <label for="message">Your Message</label>
+            <div class="invalid-feedback" id="messageError">Please enter your message.</div>
+        </div>
+    
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+    </form>  
       </div>
 
       <!-- Map -->
@@ -104,6 +103,7 @@
       </div>
     </div>
     <!-- Toast Notification -->
+     
     <div
       id="submissionToast"
       class="toast position-fixed bottom-0 end-0 p-3"

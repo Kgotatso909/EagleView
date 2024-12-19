@@ -523,6 +523,20 @@ color: #ffffff;
   padding-left: 15px;
 }
 
+.invalid-feedback {
+  display: none;
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+.is-invalid ~ .invalid-feedback {
+  display: block;
+  color: #dc3545;
+}
+
+
 /* Map Styling */
 .contact-container, .map-container {
   display: flex;
