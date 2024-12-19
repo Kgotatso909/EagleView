@@ -1,48 +1,62 @@
 const express = require('express');
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 const path = require('path');
-const expressLayouts = require('express-ejs-layouts'); 
-const dotenv = require('dotenv');
-const mongoose = require('mongoose');
-
-dotenv.config(); // Load environment variables
 
 const app = express();
+const port = 3000;
 
-// Body parser middleware
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-// Set up static assets (CSS, JS, images)
+// Set up middleware
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Set EJS as the templating engine
+// Set up EJS as the view engine
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views', 'pages'));
 
-// MongoDB connection
-// mongoose.connect(process.env.MONGO_URI, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// }).then(() => {
-//   console.log('MongoDB connected');
-// }).catch(err => {
-//   console.log('MongoDB connection error:', err);
-// });
+// Create a Nodemailer transporter
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: 'moruditech@gmail.com',  // Your email here
+        pass: 'yrhh wzzz vfwv obri'  // Your app password here
+    }
+});
 
-// Import routes
-const indexRoutes = require('./routes/index');
-const bookingRoutes = require('./routes/bookings');
-const contactRoutes = require('./routes/contact');
-const subscriptionRoutes = require('./routes/subscriptions');
+// Home route (index)
+app.get('/', (req, res) => {
+    res.render('index');
+});
 
-// Use routes
-app.use('/', indexRoutes);
-app.use('/bookings', bookingRoutes);
-app.use('/contact', contactRoutes);
-app.use('/subscriptions', subscriptionRoutes);
+// Contact page route
+app.get('/contact', (req, res) => {
+    res.render('contact');
+});
+
+// Handle contact form submission
+app.post('/send-email', (req, res) => {
+    const { name, email, subject , message } = req.body;
+
+    // Define email options
+    const mailOptions = {
+        from: email,
+        to: 'kgotatsomohlala0@gmail.com',  // Replace with your email
+        subject: `Contact Us - ${subject}`,
+        text: `You have a new message from ${name} (${email}):\n\n${message}`
+    };
+
+    // Send the email
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.log(error);
+            return res.send('Error sending message');
+        }
+        console.log('Email sent: ' + info.response);
+        res.send('Message sent successfully');
+    });
+});
 
 // Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
 });

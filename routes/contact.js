@@ -2,12 +2,12 @@ const express = require('express');
 const router = express.Router();
 const contactController = require('../controllers/contactController');
 
-// Show contact form
+// GET request to show the contact form
 router.get('/', (req, res) => {
-  res.render('pages/contact', { title: 'Contact Us' });
+    res.render('contact');
 });
 
-// Handle contact form submission
-router.post('/', contactController.handleContactSubmission);
+// POST request to handle the form submission
+router.post('/send-email', contactController.sendEmail);
 
 module.exports = router;
