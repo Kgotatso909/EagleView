@@ -1,7 +1,14 @@
+require("dotenv").config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-const contactRoutes = require('./routes/contact'); // Import contact route
+const session = require('express-session');
+
+
+// Import routes
+const contactRoutes = require('./routes/contact'); // Contact form route
+const authRoutes = require('./routes/auth'); // Authentication routes
+const adminRoutes = require('./routes/admin'); // Admin email routes
 
 const app = express();
 const port = 3000;
@@ -14,17 +21,32 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views', 'pages'));
 
-// Use the contact route (this maps all contact routes including /send-email to contactRoutes)
-app.use('/contact', contactRoutes); // This ensures all /contact routes are handled by contactRoutes
+// Session setup
+app.use(session({
+  secret: 'yourSecretKey', // Use a strong secret in production
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: false } // Use `secure: true` for HTTPS in production
+}));
 
 // Home route (index)
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index');  // Render home page
 });
 
-app.get('/contact', (req, res) => {
-    res.render('contact');
+// Use routes
+app.use('/contact', contactRoutes); // Contact form routes
+app.use('/auth', authRoutes); // Authentication routes
+app.use('/admin', adminRoutes); // Admin email routes
+
+// Admin email page route (only accessible to logged-in users)
+app.get('/admin-email', (req, res) => {
+    if (!req.session.user) {
+        return res.redirect('/auth/login');  // Redirect to login if not authenticated
+    }
+    res.render('adminEmail');  // Render the admin email form
 });
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
