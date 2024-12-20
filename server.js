@@ -5,9 +5,9 @@ const path = require('path');
 const session = require('express-session');
 
 // Import routes
-const contactRoutes = require('./routes/contact'); // Contact form route
-const authRoutes = require('./routes/auth'); // Authentication routes
-const adminRoutes = require('./routes/admin'); // Admin email routes
+const contactRoutes = require('./routes/contact'); 
+const authRoutes = require('./routes/auth'); 
+const adminRoutes = require('./routes/admin');
 
 const app = express();
 const port = 3000;
@@ -22,36 +22,36 @@ app.set('views', path.join(__dirname, 'views', 'pages'));
 
 // Session setup
 app.use(session({
-  secret: 'yourSecretKey', // Use a strong secret in production
+  secret: 'yourSecretKey', 
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: false } // Use `secure: true` for HTTPS in production
+  cookie: { secure: false } 
 }));
 
 // Session setup
 app.use(session({
-  secret: 'yourSecretKey', // Use a strong secret in production
+  secret: 'yourSecretKey',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: false } // Use `secure: true` for HTTPS in production
+  cookie: { secure: false }
 }));
 
 // Home route (index)
 app.get('/', (req, res) => {
-    res.render('index');  // Render home page
+    res.render('index');  
 });
 
 // Use routes
-app.use('/contact', contactRoutes); // Contact form routes
-app.use('/auth', authRoutes); // Authentication routes
-app.use('/admin', adminRoutes); // Admin email routes
+app.use('/contact', contactRoutes);
+app.use('/auth', authRoutes);
+app.use('/admin', adminRoutes);
 
 // Admin email page route (only accessible to logged-in users)
 app.get('/admin-email', (req, res) => {
     if (!req.session.user) {
-        return res.redirect('/auth/login');  // Redirect to login if not authenticated
+        return res.redirect('/auth/login');
     }
-    res.render('adminEmail');  // Render the admin email form
+    res.render('adminEmail');  
 });
 
 // Start the server
