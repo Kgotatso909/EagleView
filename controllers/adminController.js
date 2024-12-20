@@ -36,7 +36,8 @@ exports.sendAdminEmail = (req, res) => {
                 return res.status(500).send('Error sending email');
             } else {
                 console.log('Email sent: ' + info.response);
-                res.send('Email sent successfully');
+                // Send a success message to show the toast
+                res.render('adminEmail', { successMessage: 'Email sent successfully!' });
             }
         });
     });

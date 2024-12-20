@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const session = require('express-session');
 
-
 // Import routes
 const contactRoutes = require('./routes/contact'); // Contact form route
 const authRoutes = require('./routes/auth'); // Authentication routes
@@ -20,6 +19,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Set up EJS as the view engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views', 'pages'));
+
+// Session setup
+app.use(session({
+  secret: 'yourSecretKey', // Use a strong secret in production
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: false } // Use `secure: true` for HTTPS in production
+}));
 
 // Session setup
 app.use(session({

@@ -35,8 +35,14 @@ router.post('/login', (req, res) => {
 // Logout route
 router.get('/logout', (req, res) => {
     req.session.destroy((err) => {
-        res.redirect('/auth/login');
+        if (err) {
+            return res.status(500).send('Error logging out');
+        }
+        res.redirect('/auth/login');  // Redirect to login page after logout
     });
 });
+
+
+
 
 module.exports = router;
