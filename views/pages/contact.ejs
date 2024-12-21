@@ -39,7 +39,7 @@
     "sameAs": [
       "https://www.facebook.com/eaglesview",
       "https://www.instagram.com/eaglesview",
-      "https://www.twitter.com/eaglesview"
+      "https://www.twitter.com/Eaglesview"
     ]
   }
 </script>
@@ -62,128 +62,132 @@
     </div>
    </header>
    <!-- Contact form start here -->
-   <section class="contact-form-section container py-5">
-    <div class="row g-4">
-      <!-- Contact Form -->
-      <div class="col-lg-6">
-      <form id="contactForm" class="form-container p-4 shadow-sm rounded" action="/contact/send-email" method="POST" novalidate>
-        <div class="form-floating mb-3">
-            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required autocomplete="true" />
-            <label for="name">Your Name</label>
-            <div class="invalid-feedback" id="nameError">Please enter your name.</div>
-        </div>
+    <section class="section contact-form-section">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 section-title text-primary">Gallery</h2>
+        <div class="row g-4">
+          <!-- Contact Form -->
+          <div class="col-lg-6">
+          <form id="contactForm" class="form-container p-4 shadow-sm rounded" action="/contact/send-email" method="POST" novalidate>
+            <div class="form-floating mb-3">
+                <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required autocomplete="true" />
+                <label for="name">Your Name</label>
+                <div class="invalid-feedback" id="nameError">Please enter your name.</div>
+            </div>
+        
+            <div class="form-floating mb-3">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required />
+                <label for="email">Your Email</label>
+                <div class="invalid-feedback" id="emailError">Please enter a valid email address.</div>
+            </div>
+        
+            <div class="form-floating mb-3">
+                <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required />
+                <label for="subject">Subject</label>
+                <div class="invalid-feedback" id="subjectError">Please enter a subject.</div>
+            </div>
+        
+            <div class="form-floating mb-3">
+                <textarea id="message" name="message" class="form-control" placeholder="Your Message" style="height: 150px" required></textarea>
+                <label for="message">Your Message</label>
+                <div class="invalid-feedback" id="messageError">Please enter your message.</div>
+            </div>
+        
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>  
+          </div>
     
-        <div class="form-floating mb-3">
-            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required />
-            <label for="email">Your Email</label>
-            <div class="invalid-feedback" id="emailError">Please enter a valid email address.</div>
+          <!-- Map -->
+          <div class="col-lg-6">
+            <div class="map-container p-4 shadow-sm rounded">
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.022040857968!2d28.70179457540462!3d-25.889094277272093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eeab55cd7ae60cd%3A0xf98b91ac4fb5e18!2seagles%20view%20kungwini!5e1!3m2!1sen!2sza!4v1734187804707!5m2!1sen!2sza"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
         </div>
-    
-        <div class="form-floating mb-3">
-            <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required />
-            <label for="subject">Subject</label>
-            <div class="invalid-feedback" id="subjectError">Please enter a subject.</div>
+        <!-- Toast Notification -->
+         
+        <div
+          id="submissionToast"
+          class="toast position-fixed bottom-0 end-0 p-3"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-header">
+            <strong class="me-auto">Message Sent</strong>
+            <button
+              type="button"
+              class="btn-close"
+              onclick="hideToast()"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="toast-body">
+            Thank you for contacting us! We’ll respond to your query soon.
+          </div>
         </div>
-    
-        <div class="form-floating mb-3">
-            <textarea id="message" name="message" class="form-control" placeholder="Your Message" style="height: 150px" required></textarea>
-            <label for="message">Your Message</label>
-            <div class="invalid-feedback" id="messageError">Please enter your message.</div>
-        </div>
-    
-        <button type="submit" class="btn btn-primary w-100">Send Message</button>
-    </form>  
+        <svg
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+        >
+          <g fill="%23000000">
+            <path
+              opacity=".5"
+              d="M0 86.9V74.7l220.7-19.3L0 29.2V17.9l250 38-250 31z"
+            ></path>
+            <path
+              opacity=".5"
+              d="M0 74.7v-8.8l145.2-12.7L0 36v-6.8l220.7 26.2L0 74.7z"
+            ></path>
+            <path
+              opacity=".5"
+              d="M0 74.7v-8.8l145.2-12.7L0 36v-6.8l220.7 26.2L0 74.7z"
+            ></path>
+            <path opacity=".5" d="M0 65.9V36l145.2 17.2L0 65.9z"></path>
+            <path opacity=".5" d="M0 65.9V36l145.2 17.2L0 65.9z"></path>
+            <path opacity=".75" d="M0 65.9V36l145.2 17.2L0 65.9z"></path>
+            <path
+              opacity=".5"
+              d="M750 55.9l250-38v12.3L779.3 56.4 1000 75.7v11.2l-250-31zM500 18L250 56l250 31 250-31zM279.3 56.3L500 30.2l220.7 26.2L500 75.7z"
+            ></path>
+            <path d="M500 17.9l-250 38-250-38v-18h1000v18l-250 38-250-38z"></path>
+            <path
+              d="M500 30.2L279.3 56.4 500 75.7l220.7-19.3zM335.4 55.5L500 36l164.6 19.5L500 70z"
+              opacity=".5"
+            ></path>
+            <path
+              d="M500 30.2L279.3 56.4 500 75.7l220.7-19.3zM335.4 55.5L500 36l164.6 19.5L500 70z"
+              opacity=".5"
+            ></path>
+            <path
+              opacity=".5"
+              d="M664.6 55.5L500 69.9 335.4 55.5 500 36l164.6 19.5z"
+            ></path>
+            <path
+              opacity=".5"
+              d="M664.6 55.5L500 69.9 335.4 55.5 500 36l164.6 19.5z"
+            ></path>
+            <path
+              opacity=".75"
+              d="M664.6 55.5L500 69.9 335.4 55.5 500 36l164.6 19.5z"
+            ></path>
+            <path
+              opacity=".5"
+              d="M1000 30.2V36L854.9 53.2 1000 65.9v9.8L779.3 56.4 1000 30.2z"
+            ></path>
+            <path
+              opacity=".5"
+              d="M1000 30.2V36L854.9 53.2 1000 65.9v9.8L779.3 56.4 1000 30.2z"
+            ></path>
+            <path opacity=".5" d="M1000 36v29.9L854.9 53.2 1000 36z"></path>
+            <path opacity=".5" d="M1000 36v29.9L854.9 53.2 1000 36z"></path>
+            <path opacity=".75" d="M1000 36v29.9L854.9 53.2 1000 36z"></path>
+          </g>
+        </svg>
       </div>
-
-      <!-- Map -->
-      <div class="col-lg-6">
-        <div class="map-container p-4 shadow-sm rounded">
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.022040857968!2d28.70179457540462!3d-25.889094277272093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eeab55cd7ae60cd%3A0xf98b91ac4fb5e18!2seagless%20view%20kungwini!5e1!3m2!1sen!2sza!4v1734187804707!5m2!1sen!2sza"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </div>
-    <!-- Toast Notification -->
-     
-    <div
-      id="submissionToast"
-      class="toast position-fixed bottom-0 end-0 p-3"
-      role="alert"
-      aria-live="assertive"
-      aria-atomic="true"
-    >
-      <div class="toast-header">
-        <strong class="me-auto">Message Sent</strong>
-        <button
-          type="button"
-          class="btn-close"
-          onclick="hideToast()"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="toast-body">
-        Thank you for contacting us! We’ll respond to your query soon.
-      </div>
-    </div>
-    <svg
-      preserveAspectRatio="none"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1000 100"
-    >
-      <g fill="%23000000">
-        <path
-          opacity=".5"
-          d="M0 86.9V74.7l220.7-19.3L0 29.2V17.9l250 38-250 31z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M0 74.7v-8.8l145.2-12.7L0 36v-6.8l220.7 26.2L0 74.7z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M0 74.7v-8.8l145.2-12.7L0 36v-6.8l220.7 26.2L0 74.7z"
-        ></path>
-        <path opacity=".5" d="M0 65.9V36l145.2 17.2L0 65.9z"></path>
-        <path opacity=".5" d="M0 65.9V36l145.2 17.2L0 65.9z"></path>
-        <path opacity=".75" d="M0 65.9V36l145.2 17.2L0 65.9z"></path>
-        <path
-          opacity=".5"
-          d="M750 55.9l250-38v12.3L779.3 56.4 1000 75.7v11.2l-250-31zM500 18L250 56l250 31 250-31zM279.3 56.3L500 30.2l220.7 26.2L500 75.7z"
-        ></path>
-        <path d="M500 17.9l-250 38-250-38v-18h1000v18l-250 38-250-38z"></path>
-        <path
-          d="M500 30.2L279.3 56.4 500 75.7l220.7-19.3zM335.4 55.5L500 36l164.6 19.5L500 70z"
-          opacity=".5"
-        ></path>
-        <path
-          d="M500 30.2L279.3 56.4 500 75.7l220.7-19.3zM335.4 55.5L500 36l164.6 19.5L500 70z"
-          opacity=".5"
-        ></path>
-        <path
-          opacity=".5"
-          d="M664.6 55.5L500 69.9 335.4 55.5 500 36l164.6 19.5z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M664.6 55.5L500 69.9 335.4 55.5 500 36l164.6 19.5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M664.6 55.5L500 69.9 335.4 55.5 500 36l164.6 19.5z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1000 30.2V36L854.9 53.2 1000 65.9v9.8L779.3 56.4 1000 30.2z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1000 30.2V36L854.9 53.2 1000 65.9v9.8L779.3 56.4 1000 30.2z"
-        ></path>
-        <path opacity=".5" d="M1000 36v29.9L854.9 53.2 1000 36z"></path>
-        <path opacity=".5" d="M1000 36v29.9L854.9 53.2 1000 36z"></path>
-        <path opacity=".75" d="M1000 36v29.9L854.9 53.2 1000 36z"></path>
-      </g>
-    </svg>
-  </section>
+    </section>
+   
   <!-- Contact form ends here -->
   <%- include('../partials/_footer.ejs') %>
 </body>

@@ -340,7 +340,7 @@ display: block;
 }
 
 .section-title {
-border-color: var(--black) !important;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
 }
 
 /* Team section starts here */
@@ -491,8 +491,12 @@ color: #ffffff;
   border-radius: 8px;
 }
 
+.contact-form-section .section-title {
+  border-color: #0000ff !important;
+}
+
 .g-4 {
-  padding-bottom: 40px;
+  padding-block: 10px 40px;
 }
 
 .contact-form-section svg {
@@ -616,3 +620,19 @@ color: #ffffff;
 .footer-section .border-top {
   border-color: var(--white) !important;
 }
+
+/* Privacy Policy section starts here*/
+.privacy-section {
+  position: relative;
+  background-color: #f8f9fa;
+}
+
+.privacy-section .section-title {
+  border-color: #0056b3;
+}
+
+.privacy-section svg {
+  background-color: var(--bg-primary-dark);
+  fill: #f8f9fa;
+}
+
