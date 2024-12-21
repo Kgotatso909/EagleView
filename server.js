@@ -34,6 +34,23 @@ app.get('/', (req, res) => {
     res.render('index');  
 });
 
+// Additional Routes for other pages
+app.get('/about', (req, res) => {
+    res.render('about');  // renders about.ejs
+});
+
+app.get('/gallery', (req, res) => {
+    res.render('gallery');  // renders gallery.ejs
+});
+
+app.get('/terms', (req, res) => {
+    res.render('terms');  // renders terms.ejs
+});
+
+app.get('/privacy', (req, res) => {
+    res.render('privacy');  // renders privacy.ejs
+});
+
 // Use routes
 app.use('/contact', contactRoutes);
 app.use('/bookings', bookingsRoutes)
