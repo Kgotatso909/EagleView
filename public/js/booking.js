@@ -1,6 +1,7 @@
-const bookingForm = document.getElementById("bookingForm");
-// Booking: initialize the Date Picker
 document.addEventListener("DOMContentLoaded", () => {
+  const bookingForm = document.getElementById("bookingForm");
+
+  // Initialize flatpickr for date selection
   flatpickr("#checkin", {
     minDate: "today",
     dateFormat: "Y-m-d",
@@ -16,81 +17,147 @@ document.addEventListener("DOMContentLoaded", () => {
     minDate: "today",
     dateFormat: "Y-m-d",
   });
-});
 
-// Showing Toast
-function showToast() {
-  const toast = document.getElementById("submissionToast");
-  toast.style.display = "block";
-  toast.classList.add("show");
+  // Show Toast message
+  function showToast() {
+    const toast = document.getElementById("submissionToast");
+    toast.style.display = "block";
+    toast.classList.add("show");
 
-  setTimeout(() => {
-    hideToast();
-  }, 5000);
-}
-
-function hideToast() {
-  const toast = document.getElementById("submissionToast");
-  toast.style.display = "none";
-  toast.classList.remove("show");
-}
-
-// Date vaidation
-function validateDates() {
-  const checkin = document.getElementById("checkin").value;
-  const checkout = document.getElementById("checkout").value;
-
-  // Check if both checkin and checkout dates are selected
-  if (!checkin || !checkout) {
-    return false;
+    setTimeout(() => {
+      hideToast();
+    }, 5000);
   }
 
-  // Convert to Date objects for comparison
-  const checkinDate = new Date(checkin);
-  const checkoutDate = new Date(checkout);
-
-  // Check if check-out is before check-in
-  if (checkoutDate <= checkinDate) {
-    return false;
+  function hideToast() {
+    const toast = document.getElementById("submissionToast");
+    toast.style.display = "none";
+    toast.classList.remove("show");
   }
 
-  return true;
-}
+  // Reset all error messages
+  function resetErrors() {
+    const fields = ["name", "email", "checkin", "checkout", "select1", "select2", "select3", "message"];
+    fields.forEach((field) => {
+      const input = document.getElementById(field);
+      const error = document.getElementById(`${field}Error`);
+      if (input) input.classList.remove("is-invalid");
+      if (error) error.style.display = "none";
+    });
+  }
 
-// Form Submission
-bookingForm.addEventListener("submit", function (event) {
-  event.preventDefault();
+  // Set error message for specific input
+  function setError(inputId, errorId, errorMessage) {
+    const input = document.getElementById(inputId);
+    const error = document.getElementById(errorId);
+    if (input) input.classList.add("is-invalid");
+    if (error) {
+      error.textContent = errorMessage;
+      error.style.display = "block";
+    }
+  }
 
-  // Basic Validation
-  if (!bookingForm.checkValidity() || !validateDates()) {
-    bookingForm.classList.add("was-validated");
+  // Basic Email validation
+  function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
 
-    // Display custom error for date fields
-    if (!validateDates()) {
-      const checkoutInput = document.getElementById("checkout");
-      const checkoutError = document.getElementById("checkoutError");
+  // Date validation
+  function validateDates() {
+    const checkin = document.getElementById("checkin").value;
+    const checkout = document.getElementById("checkout").value;
 
-      // Add the invalid class to checkout field
-      checkoutInput.classList.add("is-invalid");
-
-      // Display error message
-      checkoutError.style.display = "block";
+    if (!checkin || !checkout) {
+      return false;
     }
 
-    return;
+    const checkinDate = new Date(checkin);
+    const checkoutDate = new Date(checkout);
+
+    if (checkoutDate <= checkinDate) {
+      return false;
+    }
+
+    return true;
   }
 
-  // Show Toast
-  showToast();
+  // Form Submission
+  bookingForm.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default submission
+    resetErrors(); // Reset previous errors
 
-  // Reset Form
-  bookingForm.reset();
-  bookingForm.classList.remove("was-validated");
+    // Get form field values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const checkin = document.getElementById("checkin").value.trim();
+    const checkout = document.getElementById("checkout").value.trim();
+    const adult = document.getElementById("select1").value.trim();
+    const child = document.getElementById("select2").value.trim();
+    const room = document.getElementById("select3").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-  // Hide error message after successful submission
-  const checkoutInput = document.getElementById("checkout");
-  const checkoutError = document.getElementById("checkoutError");
+    let isValid = true;
 
-  checkoutInput.classList.remove("is-invalid");
-  checkoutError.style.display = "none";
+    // Validate required fields
+    if (!name) {
+      setError("name", "nameError", "Please enter your name.");
+      isValid = false;
+    }
+
+    if (!email || !validateEmail(email)) {
+      setError("email", "emailError", "Please enter a valid email address.");
+      isValid = false;
+    }
+
+    if (!checkin) {
+      setError("checkin", "checkinError", "Please select your check-in date.");
+      isValid = false;
+    }
+
+    if (!checkout || !validateDates()) {
+      setError("checkout", "checkoutError", "Please select a valid check-out date.");
+      isValid = false;
+    }
+
+    if (!adult) {
+      setError("select1", "select1Error", "Please select the number of adults.");
+      isValid = false;
+    }
+
+    if (!child) {
+      setError("select2", "select2Error", "Please select the number of children.");
+      isValid = false;
+    }
+
+    if (!room) {
+      setError("select3", "select3Error", "Please select a room.");
+      isValid = false;
+    }
+
+    if (!message) {
+      setError("message", "messageError", "Please enter your special requests.");
+      isValid = false;
+    }
+
+    // If form is valid, show toast and then submit
+    if (isValid) {
+      // Show the toast
+      showToast();
+
+      // After showing the toast, reset the form and validation
+      setTimeout(() => {
+        bookingForm.submit();  // Submit form after toast shows
+        bookingForm.reset();   // Reset the form
+        bookingForm.classList.remove("was-validated");
+
+        // Clear error messages after form submission
+        const checkoutInput = document.getElementById("checkout");
+        const checkoutError = document.getElementById("checkoutError");
+
+        checkoutInput.classList.remove("is-invalid");
+        checkoutError.style.display = "none";
+      }, 500);  // Delay the form reset to allow the toast to show
+    }
+  });
 });

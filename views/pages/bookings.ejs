@@ -145,12 +145,12 @@
                 animation-name: fadeInUp;
               "
             >
-            <form id="bookingForm" novalidate>
+            <form id="bookingForm"  action="/bookings/submit-booking" method="POST" novalidate>
               <div class="row g-3">
                 <!-- Name -->
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input type="text" class="form-control" id="name" placeholder="Your Name" aria-label="Enter your name" required />
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" aria-label="Enter your name" required />
                     <label for="name">Your Name</label>
                     <div class="invalid-feedback">Please enter your name.</div>
                   </div>
@@ -159,7 +159,7 @@
                 <!-- Email -->
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input type="email" class="form-control" id="email" placeholder="Your Email" aria-label="Enter your email address" required />
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" aria-label="Enter your email address" required />
                     <label for="email">Your Email</label>
                     <div class="invalid-feedback">Please enter a valid email address.</div>
                   </div>
@@ -167,13 +167,13 @@
             
                 <!-- Check-in Date -->
                 <div class="form-floating mb-3">
-                  <input type="text" id="checkin" class="form-control" placeholder="Select Check-in Date" aria-label="Select Check-in Date" required />
+                  <input type="text" id="checkin" name="checkin" class="form-control" placeholder="Select Check-in Date" aria-label="Select Check-in Date" required />
                   <label for="checkin">Check-in Date</label>
                 </div>
             
                 <!-- Check-out Date -->
                 <div class="form-floating mb-3">
-                  <input type="text" id="checkout" class="form-control" placeholder="Select Check-out Date" aria-label="Select Check-out Date" required />
+                  <input type="text" id="checkout" name="checkout" class="form-control" placeholder="Select Check-out Date" aria-label="Select Check-out Date" required />
                   <label for="checkout">Check-out Date</label>
                   <div class="invalid-feedback" id="checkoutError">
                     Enter a valid Check-in date and check-in date.
@@ -183,7 +183,7 @@
                 <!-- Select Adults -->
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <select class="form-select" id="select1" required>
+                    <select class="form-select" id="select1" name="adult" required>
                       <option value="1">Adult 1</option>
                       <option value="2">Adult 2</option>
                       <option value="3">Adult 3</option>
@@ -196,7 +196,7 @@
                 <!-- Select Children -->
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <select class="form-select" id="select2" required>
+                    <select class="form-select" id="select2" name="child" required>
                       <option value="0">Child 0</option>
                       <option value="1">Child 1</option>
                       <option value="2">Child 2</option>
@@ -209,7 +209,7 @@
                 <!-- Room Selection -->
                 <div class="col-12">
                   <div class="form-floating">
-                    <select class="form-select" id="select3" required>
+                    <select class="form-select" id="select3" name="room" required>
                       <option value="1">Room 1</option>
                       <option value="2">Room 2</option>
                       <option value="3">Room 3</option>
@@ -226,7 +226,7 @@
                 <!-- Special Requests -->
                 <div class="col-12">
                   <div class="form-floating">
-                    <textarea class="form-control" placeholder="Special Request" aria-label="Special Request" id="message" style="height: 100px"></textarea>
+                    <textarea class="form-control" placeholder="Special Request" aria-label="Special Request" id="message" name="message" style="height: 100px"></textarea>
                     <label for="message">Special Request</label>
                   </div>
                 </div>

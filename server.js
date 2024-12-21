@@ -6,6 +6,7 @@ const session = require('express-session');
 
 // Import routes
 const contactRoutes = require('./routes/contact'); 
+const bookingsRoutes = require('./routes/bookings'); 
 const authRoutes = require('./routes/auth'); 
 const adminRoutes = require('./routes/admin');
 
@@ -28,14 +29,6 @@ app.use(session({
   cookie: { secure: false } 
 }));
 
-// Session setup
-app.use(session({
-  secret: 'yourSecretKey',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: false }
-}));
-
 // Home route (index)
 app.get('/', (req, res) => {
     res.render('index');  
@@ -43,6 +36,7 @@ app.get('/', (req, res) => {
 
 // Use routes
 app.use('/contact', contactRoutes);
+app.use('/bookings', bookingsRoutes)
 app.use('/auth', authRoutes);
 app.use('/admin', adminRoutes);
 
