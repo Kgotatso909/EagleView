@@ -108,8 +108,14 @@ color: #fff;
   }
 }
 
+@media (max-width: 991px) {
+  .navbar-brand img {
+    height: 70px !important;
+    width: 70px !important;
+  }
+}
 
-@media (min-width: 994px) {
+@media (min-width: 992px) {
 .navbar {
   background-color: transparent !important;
   transition: background-color 0.3s ease;
@@ -130,8 +136,9 @@ color: #fff;
   color: #fff !important;
 }
 
-.navbar.scrolled .navbar-brand {
-  color: #000 !important;
+.navbar.scrolled .navbar-brand img {
+    height: 90px !important;
+    width: 90px !important;
 }
 
 .navbar.scrolled .nav-link {

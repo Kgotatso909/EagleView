@@ -61,7 +61,7 @@
 }
 
 
-@media (min-width: 994px) {
+@media (min-width: 992px) {
   .navbar {
     background-color: transparent !important;
     transition: background-color 0.3s ease;
@@ -82,8 +82,9 @@
     color: #fff !important;
   }
   
-  .navbar.scrolled .navbar-brand {
-    color: #000 !important;
+  .navbar.scrolled .navbar-brand img {
+    height: 90px;
+    width: 90px;
   }
   
   .navbar.scrolled .nav-link {

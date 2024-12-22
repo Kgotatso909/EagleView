@@ -1,17 +1,23 @@
-document.addEventListener("DOMContentLoaded",()=>{
-  window.addEventListener("scroll", () => {
-    const navbar = document.getElementById("navbar");
-    if (window.innerWidth >= 994) {
-      if (window.scrollY >= 50) {
-        navbar.classList.add("scrolled", "navbar-light");
-      } else {
-        navbar.classList.remove("scrolled", "navbar-light");
-      }
+window.addEventListener("scroll", () => {
+  const navbar = document.getElementById("navbar");
+  const logo = document.getElementById("logo")
+  if(window.innerWidth <= 991){{
+    logo.src = "assets/images/logo-black-text.webp"
+ }}
+ 
+  if (window.innerWidth >= 991 ) {
+    if (window.scrollY >= 50) {
+      navbar.classList.add("scrolled", "navbar-light");
+      logo.src = "assets/images/logo-black-text.webp"
+    } else {
+      navbar.classList.remove("scrolled", "navbar-light");
+      logo.src = "assets/images/logo-white-text.webp"
     }
-  });
-})
+  }
 
-// Toggle descriptions
+});
+document.addEventListener("DOMContentLoaded",()=>{
+  // Toggle descriptions
 function toggleDescription(header) {
   const description = header.nextElementSibling;
   const arrow = header.querySelector(".arrow");
@@ -38,3 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(img);
   });
 });
+
+})
+
