@@ -1,560 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta name="keywords" content="lodge, Bronkhorstspruit, family-friendly getaway, luxury lodge, outdoor activities, accommodations" />
-  <meta name="description" content="Learn about Eagles View Kungwini, a tranquil lodge in Bronkhorstspruit offering comfortable accommodations, exciting activities, and exceptional hospitality."/>
-  <%- include("../partials/_header.ejs") %>
-  <title>About | Eagles View Kungwini vision and mission</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/all.min.css" />
-  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LodgingBusiness",
-      "name": "Eagles View Kungwini",
-      "description": "Located in Bronkhorstspruit, Eagless View Kungwini offers a tranquil escape with comfortable accommodations and exciting activities.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "21 Witkruis Arend St, Kungwini Country Estate",
-        "addressLocality": "Bronkhorstspruit",
-        "addressRegion": "Gauteng",
-        "postalCode": "1020",
-        "addressCountry": "ZA"
-      },
-      "telephone": "+27 834113931",
-      "email": "info@Eaglesviewkungwini.co.za",
-      "url": "https://example.com",
-      "employee": [
-        {
-          "@type": "Person",
-          "name": "John Doe",
-          "jobTitle": "General Manager",
-          "sameAs": "https://www.linkedin.com/in/johndoe"
+  <head>
+    <meta
+      name="keywords"
+      content="lodge, Bronkhorstspruit, family-friendly getaway, luxury lodge, outdoor activities, accommodations"
+    />
+    <meta
+      name="description"
+      content="Learn about Eagles View Kungwini, a tranquil lodge in Bronkhorstspruit offering comfortable accommodations, exciting activities, and exceptional hospitality."
+    />
+    <%- include("../partials/_header.ejs") %>
+    <title>About | Eagles View Kungwini vision and mission</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.3.7.1.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Eagles View Kungwini",
+        "description": "Located in Bronkhorstspruit, Eagless View Kungwini offers a tranquil escape with comfortable accommodations and exciting activities.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "21 Witkruis Arend St, Kungwini Country Estate",
+          "addressLocality": "Bronkhorstspruit",
+          "addressRegion": "Gauteng",
+          "postalCode": "1020",
+          "addressCountry": "ZA"
         },
-        {
-          "@type": "Person",
-          "name": "Jane Smith",
-          "jobTitle": "Receptionist",
-          "sameAs": "https://www.linkedin.com/in/janesmith"
-        }
-      ]
-    }
-  </script>
-</head>
-<body>
-  <header class="header_area">
-    <div class="main-menu">
-      <%- include("../partials/_navbar.ejs") %>
+        "telephone": "+27 834113931",
+        "email": "info@Eaglesviewkungwini.co.za",
+        "url": "https://example.com",
+        "employee": [
+          {
+            "@type": "Person",
+            "name": "John Doe",
+            "jobTitle": "General Manager",
+            "sameAs": "https://www.linkedin.com/in/johndoe"
+          },
+          {
+            "@type": "Person",
+            "name": "Jane Smith",
+            "jobTitle": "Receptionist",
+            "sameAs": "https://www.linkedin.com/in/janesmith"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="main-menu">
+        <%- include("../partials/_navbar.ejs") %>
 
-      <div class="hero-section">
-        <div class="hero-bg-color"></div>
-        <div class="container text-center py-5 hero-content">
-          <h1 class="hero-title">About Eagles View</h1>
-          <p class="hero-description">We offer luxurious and peaceful accommodations in the serene environment of Bronkhorstspruit.</p>
-          <a href="/bookings" class="btn btn-primary btn-lg">Book Now</a>
+        <div class="hero-section">
+          <div class="hero-bg-color"></div>
+          <div class="container text-center py-5 hero-content">
+            <h1 class="hero-title">About Eagles View</h1>
+            <p class="hero-description">
+              We offer luxurious and peaceful accommodations in the serene
+              environment of Bronkhorstspruit.
+            </p>
+            <a href="/bookings" class="btn btn-primary btn-lg">Book Now</a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-   <!-- About us starts here -->
-   <section class="page-about-section section">
-    <div class="container px-4 py-5">
-      <h2 class="pb-2 section-title text-primary">About Us</h2>
-      <div class="about-inner-container">
-        <div class="about-toggle-container">
-          <div class="about-item">
-            <div class="about-header" onclick="toggleDescription(this)">
-              <i class="fa fa-map-marker-alt"></i> Location
-              <span class="arrow">&#x25BC;</span>
+    </header>
+    <!-- About us starts here -->
+    <section class="page-about-section section">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 section-title text-primary">About Us</h2>
+        <div class="about-inner-container">
+          <div class="about-toggle-container">
+            <div class="about-item">
+              <div class="about-header" onclick="toggleDescription(this)">
+                <i class="fa fa-map-marker-alt"></i> Location
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="about-description">
+                Located in Bronkhorstspruit, Gauteng, eagless View Kungwini is a
+                short walk from Bronkhorstspruit Dam, offering a tranquil
+                escape.
+              </div>
             </div>
-            <div class="about-description">
-              Located in Bronkhorstspruit, Gauteng, eagless View Kungwini is a
-              short walk from Bronkhorstspruit Dam, offering a tranquil
-              escape.
+            <div class="about-item">
+              <div class="about-header" onclick="toggleDescription(this)">
+                <i class="fa fa-bed"></i> Accommodation
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="about-description">
+                Our 7 comfortable units feature en-suite bathrooms, a shared
+                kitchen, lounge, patio, and access to premium amenities.
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-header" onclick="toggleDescription(this)">
+                <i class="fa fa-star"></i> Experience
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="about-description">
+                From bird watching and fishing to cycling and horseback riding,
+                enjoy a perfect mix of relaxation and adventure.
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-header" onclick="toggleDescription(this)">
+                <i class="fa-solid fa-money-check-dollar"></i>Rates
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="about-description">
+                Price range from R1 200 to R1 700
+              </div>
             </div>
           </div>
-          <div class="about-item">
-            <div class="about-header" onclick="toggleDescription(this)">
-              <i class="fa fa-bed"></i> Accommodation
-              <span class="arrow">&#x25BC;</span>
-            </div>
-            <div class="about-description">
-              Our 7 comfortable units feature en-suite bathrooms, a shared
-              kitchen, lounge, patio, and access to premium amenities.
-            </div>
+          <div class="about-image-container">
+            <img
+              src="assets/images/about-img.webp"
+              alt="eagless View Kungwini Lodge"
+              class="about-image"
+              height="225"
+              width="300"
+            />
           </div>
-          <div class="about-item">
-            <div class="about-header" onclick="toggleDescription(this)">
-              <i class="fa fa-star"></i> Experience
-              <span class="arrow">&#x25BC;</span>
-            </div>
-            <div class="about-description">
-              From bird watching and fishing to cycling and horseback riding,
-              enjoy a perfect mix of relaxation and adventure.
-            </div>
-          </div>
-          <div class="about-item">
-            <div class="about-header" onclick="toggleDescription(this)">
-              <i class="fa-solid fa-money-check-dollar"></i>Rates
-              <span class="arrow">&#x25BC;</span>
-            </div>
-            <div class="about-description">
-              Price range from R1 200 to R1 700
-            </div>
-          </div>
-        </div>
-        <div class="about-image-container">
-          <img
-            src="assets/images/about-img.webp"
-            alt="eagless View Kungwini Lodge"
-            class="about-image"
-            height="225"
-            width="300"
-          />
         </div>
       </div>
-    </div>
-    <svg
-      preserveAspectRatio="xMidYMax slice"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 2000 53"
-    >
-      <g fill="%23000000">
-        <path opacity=".5" d="M32 32H15L6 17l9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M64 32H47l-9-15 9-15h17l9 15-9 15zM49 53h-7l-4-7 4-7h7l4 7-4 7zM5 35H3l-2-2 2-2h2l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M28 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-18-1H8l-3-4 3-5h5l3 5-3 4zm-3-18H5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-1-3 1-2h3l1 2-1 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zM24 52h-3l-2-2 2-3h3l1 3-1 2z"
-        ></path>
-        <path opacity=".5" d="M87 35h2l1-2-1-2h-2l-2 2 2 2z"></path>
-        <path
-          opacity=".2"
-          d="M64 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm17-1h6l3-4-3-5h-6l-2 5 2 4z"
-        ></path>
-        <path opacity=".5" d="M82 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
-        <path
-          opacity=".2"
-          d="M51 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-1 3 1 2z"
-        ></path>
-        <path opacity=".5" d="M125 32h-18l-8-15 8-15h18l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M156 32h-17l-9-15 9-15h17l9 15-9 15zm-14 21h-8l-4-7 4-7h8l3 7-3 7zM97 35h-2l-1-2 1-2h2l2 2-2 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M120 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-17-1h-6l-3-4 3-5h6l2 5-2 4zm-4-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
-        ></path>
-        <path opacity=".5" d="M179 35h2l2-2-2-2h-2l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M156 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1v2zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M174 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
-        <path
-          opacity=".2"
-          d="M143 38h3l2-3-2-2h-3l-1 2 1 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l2-2-2-3h-3l-1 3 1 2z"
-        ></path>
-        <path opacity=".5" d="M217 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M249 32h-18l-8-15 8-15h18l8 15-8 15zm-15 21h-8l-3-7 3-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M213 43h-9l-4-7 4-7h9l4 7-4 7zm3 6h-2v-2h2v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-3-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-2l-2-2 2-3h2l2 3-2 2z"
-        ></path>
-        <path opacity=".5" d="M271 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M249 43h8l4-7-4-7h-8l-5 7 5 7zm-4 6h2v-2h-2v2zm18-1h6l2-4-2-5h-6l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M266 30h6l2-5-2-4h-6l-2 4 2 5z"></path>
-        <path
-          opacity=".2"
-          d="M236 38h2l2-3-2-2h-2l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
-        ></path>
-        <path opacity=".5" d="M310 32h-18l-9-15 9-15h18l8 15-8 15z"></path>
-        <path
-          opacity=".5"
-          d="M341 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-2-2 2-2h2l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M305 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l1 2-1 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-2-2 2-3h3l1 3-1 2z"
-        ></path>
-        <path opacity=".5" d="M364 35h2l1-2-1-2h-2l-2 2 2 2z"></path>
-        <path
-          opacity=".2"
-          d="M341 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M359 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
-        <path
-          opacity=".2"
-          d="M328 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l1-2-1-3h-3l-1 3 1 2z"
-        ></path>
-        <path opacity=".5" d="M402 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M433 32h-17l-9-15 9-15h17l9 15-9 15zm-14 21h-8l-4-7 4-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M397 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1v-2h1l1 1-1 1zm-17-1h-6l-2-4 2-5h6l2 5-2 4zm-4-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
-        ></path>
-        <path opacity=".5" d="M456 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M433 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1v2zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M451 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
-        <path
-          opacity=".2"
-          d="M420 38h3l2-3-2-2h-3l-1 2 1 3zm3-9h3l2-3-2-3h-3l-2 3 2 3zm14 23h3l2-2-2-3h-3l-1 3 1 2z"
-        ></path>
-        <path opacity=".5" d="M494 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M526 32h-18l-8-15 8-15h18l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M490 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-3-9h-3l-2-3 2-3h3l2 3-2 3zm-14 23h-3l-2-2 2-3h3l1 3-1 2z"
-        ></path>
-        <path opacity=".5" d="M548 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M526 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1v-2h-1l-1 1 1 1zm17-1h6l2-4-2-5h-6l-2 5 2 4z"
-        ></path>
-        <path opacity=".5" d="M544 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
-        <path
-          opacity=".2"
-          d="M513 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
-        ></path>
-        <path opacity=".5" d="M587 32h-18l-8-15 8-15h18l8 15-8 15z"></path>
-        <path
-          opacity=".5"
-          d="M618 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-1-2 1-2h2l2 2-2 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M582 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-1-2 1-3h3l1 3-1 2z"
-        ></path>
-        <path opacity=".5" d="M641 35h2l2-2-2-2h-2l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M618 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M636 30h5l3-5-3-4h-5l-3 4 3 5z"></path>
-        <path
-          opacity=".2"
-          d="M605 38h3l1-3-1-2h-3l-1 2 1 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l2-2-2-3h-3l-1 3 1 2z"
-        ></path>
-        <path opacity=".5" d="M679 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M711 32h-18l-9-15 9-15h18l8 15-8 15zm-15 21h-8l-4-7 4-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M674 43h-8l-4-7 4-7h8l5 7-5 7zm4 6h-2v-2h2v2zm-18-1h-6l-2-4 2-5h6l3 5-3 4zm-3-18h-6l-2-5 2-4h6l2 4-2 5zm30 8h-2l-2-3 2-2h2l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
-        ></path>
-        <path opacity=".5" d="M733 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M710 43h9l4-7-4-7h-9l-4 7 4 7zm-3 6h2v-2h-2v2zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M728 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
-        <path
-          opacity=".2"
-          d="M697 38h3l2-3-2-2h-3l-1 2 1 3zm3-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h2l2-2-2-3h-2l-2 3 2 2z"
-        ></path>
-        <path opacity=".5" d="M771 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M803 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-2-2 2-2h2l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M767 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-2-2 2-3h3l1 3-1 2z"
-        ></path>
-        <path opacity=".5" d="M826 35h2l1-2-1-2h-2l-2 2 2 2z"></path>
-        <path
-          opacity=".2"
-          d="M803 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm17-1h6l3-4-3-5h-6l-2 5 2 4z"
-        ></path>
-        <path opacity=".5" d="M821 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
-        <path
-          opacity=".2"
-          d="M790 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
-        ></path>
-        <path opacity=".5" d="M864 32h-18l-8-15 8-15h18l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M895 32h-17l-9-15 9-15h17l9 15-9 15zm-14 21h-8l-4-7 4-7h8l3 7-3 7zm-45-18h-2l-1-2 1-2h2l2 2-2 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M859 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-17-1h-6l-3-4 3-5h6l2 5-2 4zm-4-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l1 3-1 2z"
-        ></path>
-        <path opacity=".5" d="M918 35h2l2-2-2-2h-2l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M895 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M913 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
-        <path
-          opacity=".2"
-          d="M882 38h3l1-3-1-2h-3l-1 2 1 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l2-2-2-3h-3l-1 3 1 2z"
-        ></path>
-        <path opacity=".5" d="M956 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M988 32h-18l-8-15 8-15h18l8 15-8 15zm-15 21h-8l-3-7 3-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M952 43h-9l-4-7 4-7h9l4 7-4 7zm3 6h-2v-2h2v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-3-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-2l-2-2 2-3h2l2 3-2 2z"
-        ></path>
-        <path opacity=".5" d="M1010 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M988 43h8l4-7-4-7h-8l-5 7 5 7zm-4 6h2v-2h-2v2zm18-1h6l2-4-2-5h-6l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M1005 30h6l2-5-2-4h-6l-2 4 2 5z"></path>
-        <path
-          opacity=".2"
-          d="M975 38h2l2-3-2-2h-2l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
-        ></path>
-        <path opacity=".5" d="M1049 32h-18l-9-15 9-15h18l8 15-8 15z"></path>
-        <path
-          opacity=".5"
-          d="M1080 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-2-2 2-2h2l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M1044 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l1 2-1 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-2-2 2-3h3l1 3-1 2z"
-        ></path>
-        <path opacity=".5" d="M1103 35h2l1-2-1-2h-2l-2 2 2 2z"></path>
-        <path
-          opacity=".2"
-          d="M1080 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm17-1h6l3-4-3-5h-6l-2 5 2 4z"
-        ></path>
-        <path opacity=".5" d="M1098 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
-        <path
-          opacity=".2"
-          d="M1067 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l1-2-1-3h-3l-1 3 1 2z"
-        ></path>
-        <path opacity=".5" d="M1141 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M1172 32h-17l-9-15 9-15h17l9 15-9 15zm-14 21h-8l-4-7 4-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M1136 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1v-2h1l1 1-1 1zm-17-1h-6l-2-4 2-5h6l2 5-2 4zm-4-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
-        ></path>
-        <path opacity=".5" d="M1195 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M1172 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1v2zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M1190 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
-        <path
-          opacity=".2"
-          d="M1159 38h3l2-3-2-2h-3l-1 2 1 3zm3-9h3l2-3-2-3h-3l-2 3 2 3zm14 23h3l2-2-2-3h-3l-1 3 1 2z"
-        ></path>
-        <path opacity=".5" d="M1233 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M1265 32h-18l-8-15 8-15h18l9 15-9 15zm-15 21h-8l-3-7 3-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M1229 43h-8l-5-7 5-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-3-9h-3l-2-3 2-3h3l2 3-2 3zm-14 23h-3l-2-2 2-3h3l1 3-1 2z"
-        ></path>
-        <path opacity=".5" d="M1287 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M1265 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1v-2h-1l-1 1 1 1zm17-1h6l2-4-2-5h-6l-2 5 2 4z"
-        ></path>
-        <path opacity=".5" d="M1283 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
-        <path
-          opacity=".2"
-          d="M1252 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
-        ></path>
-        <path opacity=".5" d="M1326 32h-18l-8-15 8-15h18l8 15-8 15z"></path>
-        <path
-          opacity=".5"
-          d="M1357 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-1-2 1-2h2l2 2-2 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M1321 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-1-2 1-3h3l1 3-1 2z"
-        ></path>
-        <path opacity=".5" d="M1380 35h2l2-2-2-2h-2l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M1357 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M1375 30h5l3-5-3-4h-5l-3 4 3 5z"></path>
-        <path
-          opacity=".2"
-          d="M1344 38h3l1-3-1-2h-3l-1 2 1 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l2-2-2-3h-3l-1 3 1 2z"
-        ></path>
-        <path opacity=".5" d="M1418 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M1450 32h-18l-9-15 9-15h18l8 15-8 15zm-15 21h-8l-4-7 4-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M1413 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1v-2h1l1 1-1 1zm-17-1h-6l-2-4 2-5h6l3 5-3 4zm-3-18h-6l-2-5 2-4h6l2 4-2 5zm30 8h-2l-2-3 2-2h2l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
-        ></path>
-        <path opacity=".5" d="M1472 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M1449 43h9l4-7-4-7h-9l-4 7 4 7zm-3 6h2v-2h-2v2zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M1467 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
-        <path
-          opacity=".2"
-          d="M1436 38h3l2-3-2-2h-3l-1 2 1 3zm3-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h2l2-2-2-3h-2l-2 3 2 2z"
-        ></path>
-        <path opacity=".5" d="M1510 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M1542 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-2-2 2-2h2l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M1506 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-2-2 2-3h3l1 3-1 2z"
-        ></path>
-        <path opacity=".5" d="M1565 35h2l1-2-1-2h-2l-2 2 2 2z"></path>
-        <path
-          opacity=".2"
-          d="M1542 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm17-1h6l2-4-2-5h-6l-2 5 2 4z"
-        ></path>
-        <path opacity=".5" d="M1560 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
-        <path
-          opacity=".2"
-          d="M1529 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
-        ></path>
-        <path opacity=".5" d="M1603 32h-18l-8-15 8-15h18l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M1634 32h-17l-9-15 9-15h17l9 15-9 15zm-14 21h-8l-4-7 4-7h8l3 7-3 7zm-45-18h-2l-1-2 1-2h2l2 2-2 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M1598 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-17-1h-6l-3-4 3-5h6l2 5-2 4zm-4-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l1 3-1 2z"
-        ></path>
-        <path opacity=".5" d="M1657 35h2l2-2-2-2h-2l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M1634 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M1652 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
-        <path
-          opacity=".2"
-          d="M1621 38h3l1-3-1-2h-3l-1 2 1 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l2-2-2-3h-3l-1 3 1 2z"
-        ></path>
-        <path opacity=".5" d="M1695 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M1727 32h-18l-8-15 8-15h18l8 15-8 15zm-15 21h-8l-3-7 3-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M1691 43h-9l-4-7 4-7h9l4 7-4 7zm3 6h-2v-2h2v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-3-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
-        ></path>
-        <path opacity=".5" d="M1749 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M1727 43h8l4-7-4-7h-8l-5 7 5 7zm-4 6h2v-2h-2v2zm18-1h6l2-4-2-5h-6l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M1744 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
-        <path
-          opacity=".2"
-          d="M1713 38h3l2-3-2-2h-3l-1 2 1 3zm3-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
-        ></path>
-        <path opacity=".5" d="M1788 32h-18l-9-15 9-15h18l8 15-8 15z"></path>
-        <path
-          opacity=".5"
-          d="M1819 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-2-2 2-2h2l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M1783 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l1 2-1 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-2-2 2-3h3l1 3-1 2z"
-        ></path>
-        <path opacity=".5" d="M1842 35h2l1-2-1-2h-2l-2 2 2 2z"></path>
-        <path
-          opacity=".2"
-          d="M1819 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm17-1h6l3-4-3-5h-6l-2 5 2 4z"
-        ></path>
-        <path opacity=".5" d="M1837 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
-        <path
-          opacity=".2"
-          d="M1806 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-1 3 1 3zm15 23h3l1-2-1-3h-3l-1 3 1 2z"
-        ></path>
-        <path opacity=".5" d="M1880 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M1911 32h-17l-9-15 9-15h17l9 15-9 15zm-14 21h-8l-4-7 4-7h8l3 7-3 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M1875 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1v-2h1l1 1-1 1zm-17-1h-6l-2-4 2-5h6l2 5-2 4zm-4-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
-        ></path>
-        <path opacity=".5" d="M1934 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
-        <path
-          opacity=".2"
-          d="M1911 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1v2zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
-        ></path>
-        <path opacity=".5" d="M1929 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
-        <path
-          opacity=".2"
-          d="M1898 38h3l2-3-2-2h-3l-1 2 1 3zm3-9h3l2-3-2-3h-3l-2 3 2 3zm14 23h3l2-2-2-3h-3l-1 3 1 2z"
-        ></path>
-        <path opacity=".5" d="M1972 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
-        <path
-          opacity=".5"
-          d="M2000 32V2h-14l-7 13-1 2 8 15h14zm-11 21h-8l-3-7 3-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
-        ></path>
-        <path
-          opacity=".2"
-          d="M1968 43h-8l-5-7 5-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-3-9h-3l-2-3 2-3h3l2 3-2 3zm-14 23h-3l-2-2 2-3h3l1 3-1 2zm36-15v-3 3zm0 11v-1 1zm-9-10h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3z"
-        ></path>
-        <path
-          d="M1990 12l-2 3h-17l-5-8-5 8h-28l-4-8-5 8h-18l-5-9-5 9h-18l-4-8-5 8h-30l-5-8-4 8h-18l-4-7-5 7h-17l-5-8-4 8h-32l-5-8-5 8h-17l-4-6-3 6h-17l-5-8-5 8h-34l-4-8-5 8h-17l-3-4-2 4h-18l-4-8-5 8h-36l-5-8-4 8h-18l-1-2-2 2h-17l-5-8-4 8h-35l-5-8-5 8h-17l-2-3-2 3h-17l-5-8-5 8h-28l-5-8-4 8h-18l-5-9-5 9h-18l-5-8-4 8h-30l-5-8-5 8h-17l-4-7-5 7h-17l-5-8-5 8h-26l-4-8-5 8h-17l-7-11-6 11h-18l-4-8-5 8h-28l-5-8-4 8h-18l-5-9-6 9h-17l-5-8-4 8h-25l-5-8-5 8h-17l-7-12-7 12h-17l-5-8-5 8h-28l-5-8-4 8h-18l-5-9-5 9h-18l-4-8-5 8h-25l-5-8-4 8h-18l-7-12-7 12h-17l-5-8-4 8h-25l-5-8-5 8h-17l-7-12-7 12h-17l-5-8-5 8h-30l-5-8-4 8h-18l-4-7-4 7h-18l-4-8-5 8h-24l-5-8-4 8h-18l-7-13-8 13h-17l-5-8-5 8h-28l-4-8-5 8h-18l-5-9-5 9h-18l-4-8-5 8h-28l-5-8-4 8h-18l-5-9-6 9h-17l-5-8-4 8h-25l-5-8-5 8h-17l-7-12-7 12h-17l-5-8-5 8h-25l-4-8-5 8h-17l-7-12-7 12h-18l-4-8-5 8H89l-5-8-4 8H62L55 3l-7 12H31l-5-8-4 8H4L0 8V0h2000v15l-10-3z"
-        ></path>
-      </g>
-    </svg>
-  </section>
-  <!-- About US section ends here -->
-   <!-- Team section starts here -->
-   <section class="team-section section">
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="text-center wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="
-            visibility: visible;
-            animation-delay: 0.1s;
-            animation-name: fadeInUp;
-          "
-        >
-          <h2 class="pb-2 section-title text-primary">Meet Our Staff</h2>
-        </div>
-        <div class="row g-4">
+      <svg
+        preserveAspectRatio="xMidYMax slice"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 2000 53"
+      >
+        <g fill="%23000000">
+          <path opacity=".5" d="M32 32H15L6 17l9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M64 32H47l-9-15 9-15h17l9 15-9 15zM49 53h-7l-4-7 4-7h7l4 7-4 7zM5 35H3l-2-2 2-2h2l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M28 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-18-1H8l-3-4 3-5h5l3 5-3 4zm-3-18H5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-1-3 1-2h3l1 2-1 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zM24 52h-3l-2-2 2-3h3l1 3-1 2z"
+          ></path>
+          <path opacity=".5" d="M87 35h2l1-2-1-2h-2l-2 2 2 2z"></path>
+          <path
+            opacity=".2"
+            d="M64 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm17-1h6l3-4-3-5h-6l-2 5 2 4z"
+          ></path>
+          <path opacity=".5" d="M82 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
+          <path
+            opacity=".2"
+            d="M51 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-1 3 1 2z"
+          ></path>
+          <path opacity=".5" d="M125 32h-18l-8-15 8-15h18l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M156 32h-17l-9-15 9-15h17l9 15-9 15zm-14 21h-8l-4-7 4-7h8l3 7-3 7zM97 35h-2l-1-2 1-2h2l2 2-2 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M120 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-17-1h-6l-3-4 3-5h6l2 5-2 4zm-4-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
+          ></path>
+          <path opacity=".5" d="M179 35h2l2-2-2-2h-2l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M156 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1v2zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M174 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
+          <path
+            opacity=".2"
+            d="M143 38h3l2-3-2-2h-3l-1 2 1 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l2-2-2-3h-3l-1 3 1 2z"
+          ></path>
+          <path opacity=".5" d="M217 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M249 32h-18l-8-15 8-15h18l8 15-8 15zm-15 21h-8l-3-7 3-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M213 43h-9l-4-7 4-7h9l4 7-4 7zm3 6h-2v-2h2v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-3-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-2l-2-2 2-3h2l2 3-2 2z"
+          ></path>
+          <path opacity=".5" d="M271 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M249 43h8l4-7-4-7h-8l-5 7 5 7zm-4 6h2v-2h-2v2zm18-1h6l2-4-2-5h-6l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M266 30h6l2-5-2-4h-6l-2 4 2 5z"></path>
+          <path
+            opacity=".2"
+            d="M236 38h2l2-3-2-2h-2l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
+          ></path>
+          <path opacity=".5" d="M310 32h-18l-9-15 9-15h18l8 15-8 15z"></path>
+          <path
+            opacity=".5"
+            d="M341 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-2-2 2-2h2l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M305 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l1 2-1 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-2-2 2-3h3l1 3-1 2z"
+          ></path>
+          <path opacity=".5" d="M364 35h2l1-2-1-2h-2l-2 2 2 2z"></path>
+          <path
+            opacity=".2"
+            d="M341 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M359 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
+          <path
+            opacity=".2"
+            d="M328 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l1-2-1-3h-3l-1 3 1 2z"
+          ></path>
+          <path opacity=".5" d="M402 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M433 32h-17l-9-15 9-15h17l9 15-9 15zm-14 21h-8l-4-7 4-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M397 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1v-2h1l1 1-1 1zm-17-1h-6l-2-4 2-5h6l2 5-2 4zm-4-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
+          ></path>
+          <path opacity=".5" d="M456 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M433 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1v2zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M451 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
+          <path
+            opacity=".2"
+            d="M420 38h3l2-3-2-2h-3l-1 2 1 3zm3-9h3l2-3-2-3h-3l-2 3 2 3zm14 23h3l2-2-2-3h-3l-1 3 1 2z"
+          ></path>
+          <path opacity=".5" d="M494 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M526 32h-18l-8-15 8-15h18l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M490 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-3-9h-3l-2-3 2-3h3l2 3-2 3zm-14 23h-3l-2-2 2-3h3l1 3-1 2z"
+          ></path>
+          <path opacity=".5" d="M548 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M526 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1v-2h-1l-1 1 1 1zm17-1h6l2-4-2-5h-6l-2 5 2 4z"
+          ></path>
+          <path opacity=".5" d="M544 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
+          <path
+            opacity=".2"
+            d="M513 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
+          ></path>
+          <path opacity=".5" d="M587 32h-18l-8-15 8-15h18l8 15-8 15z"></path>
+          <path
+            opacity=".5"
+            d="M618 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-1-2 1-2h2l2 2-2 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M582 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-1-2 1-3h3l1 3-1 2z"
+          ></path>
+          <path opacity=".5" d="M641 35h2l2-2-2-2h-2l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M618 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M636 30h5l3-5-3-4h-5l-3 4 3 5z"></path>
+          <path
+            opacity=".2"
+            d="M605 38h3l1-3-1-2h-3l-1 2 1 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l2-2-2-3h-3l-1 3 1 2z"
+          ></path>
+          <path opacity=".5" d="M679 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M711 32h-18l-9-15 9-15h18l8 15-8 15zm-15 21h-8l-4-7 4-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M674 43h-8l-4-7 4-7h8l5 7-5 7zm4 6h-2v-2h2v2zm-18-1h-6l-2-4 2-5h6l3 5-3 4zm-3-18h-6l-2-5 2-4h6l2 4-2 5zm30 8h-2l-2-3 2-2h2l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
+          ></path>
+          <path opacity=".5" d="M733 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M710 43h9l4-7-4-7h-9l-4 7 4 7zm-3 6h2v-2h-2v2zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M728 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
+          <path
+            opacity=".2"
+            d="M697 38h3l2-3-2-2h-3l-1 2 1 3zm3-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h2l2-2-2-3h-2l-2 3 2 2z"
+          ></path>
+          <path opacity=".5" d="M771 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M803 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-2-2 2-2h2l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M767 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-2-2 2-3h3l1 3-1 2z"
+          ></path>
+          <path opacity=".5" d="M826 35h2l1-2-1-2h-2l-2 2 2 2z"></path>
+          <path
+            opacity=".2"
+            d="M803 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm17-1h6l3-4-3-5h-6l-2 5 2 4z"
+          ></path>
+          <path opacity=".5" d="M821 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
+          <path
+            opacity=".2"
+            d="M790 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
+          ></path>
+          <path opacity=".5" d="M864 32h-18l-8-15 8-15h18l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M895 32h-17l-9-15 9-15h17l9 15-9 15zm-14 21h-8l-4-7 4-7h8l3 7-3 7zm-45-18h-2l-1-2 1-2h2l2 2-2 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M859 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-17-1h-6l-3-4 3-5h6l2 5-2 4zm-4-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l1 3-1 2z"
+          ></path>
+          <path opacity=".5" d="M918 35h2l2-2-2-2h-2l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M895 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M913 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
+          <path
+            opacity=".2"
+            d="M882 38h3l1-3-1-2h-3l-1 2 1 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l2-2-2-3h-3l-1 3 1 2z"
+          ></path>
+          <path opacity=".5" d="M956 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M988 32h-18l-8-15 8-15h18l8 15-8 15zm-15 21h-8l-3-7 3-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M952 43h-9l-4-7 4-7h9l4 7-4 7zm3 6h-2v-2h2v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-3-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-2l-2-2 2-3h2l2 3-2 2z"
+          ></path>
+          <path opacity=".5" d="M1010 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M988 43h8l4-7-4-7h-8l-5 7 5 7zm-4 6h2v-2h-2v2zm18-1h6l2-4-2-5h-6l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M1005 30h6l2-5-2-4h-6l-2 4 2 5z"></path>
+          <path
+            opacity=".2"
+            d="M975 38h2l2-3-2-2h-2l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
+          ></path>
+          <path opacity=".5" d="M1049 32h-18l-9-15 9-15h18l8 15-8 15z"></path>
+          <path
+            opacity=".5"
+            d="M1080 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-2-2 2-2h2l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M1044 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l1 2-1 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-2-2 2-3h3l1 3-1 2z"
+          ></path>
+          <path opacity=".5" d="M1103 35h2l1-2-1-2h-2l-2 2 2 2z"></path>
+          <path
+            opacity=".2"
+            d="M1080 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm17-1h6l3-4-3-5h-6l-2 5 2 4z"
+          ></path>
+          <path opacity=".5" d="M1098 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
+          <path
+            opacity=".2"
+            d="M1067 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l1-2-1-3h-3l-1 3 1 2z"
+          ></path>
+          <path opacity=".5" d="M1141 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M1172 32h-17l-9-15 9-15h17l9 15-9 15zm-14 21h-8l-4-7 4-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M1136 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1v-2h1l1 1-1 1zm-17-1h-6l-2-4 2-5h6l2 5-2 4zm-4-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
+          ></path>
+          <path opacity=".5" d="M1195 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M1172 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1v2zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M1190 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
+          <path
+            opacity=".2"
+            d="M1159 38h3l2-3-2-2h-3l-1 2 1 3zm3-9h3l2-3-2-3h-3l-2 3 2 3zm14 23h3l2-2-2-3h-3l-1 3 1 2z"
+          ></path>
+          <path opacity=".5" d="M1233 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M1265 32h-18l-8-15 8-15h18l9 15-9 15zm-15 21h-8l-3-7 3-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M1229 43h-8l-5-7 5-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-3-9h-3l-2-3 2-3h3l2 3-2 3zm-14 23h-3l-2-2 2-3h3l1 3-1 2z"
+          ></path>
+          <path opacity=".5" d="M1287 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M1265 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1v-2h-1l-1 1 1 1zm17-1h6l2-4-2-5h-6l-2 5 2 4z"
+          ></path>
+          <path opacity=".5" d="M1283 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
+          <path
+            opacity=".2"
+            d="M1252 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
+          ></path>
+          <path opacity=".5" d="M1326 32h-18l-8-15 8-15h18l8 15-8 15z"></path>
+          <path
+            opacity=".5"
+            d="M1357 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-1-2 1-2h2l2 2-2 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M1321 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-1-2 1-3h3l1 3-1 2z"
+          ></path>
+          <path opacity=".5" d="M1380 35h2l2-2-2-2h-2l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M1357 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M1375 30h5l3-5-3-4h-5l-3 4 3 5z"></path>
+          <path
+            opacity=".2"
+            d="M1344 38h3l1-3-1-2h-3l-1 2 1 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l2-2-2-3h-3l-1 3 1 2z"
+          ></path>
+          <path opacity=".5" d="M1418 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M1450 32h-18l-9-15 9-15h18l8 15-8 15zm-15 21h-8l-4-7 4-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M1413 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1v-2h1l1 1-1 1zm-17-1h-6l-2-4 2-5h6l3 5-3 4zm-3-18h-6l-2-5 2-4h6l2 4-2 5zm30 8h-2l-2-3 2-2h2l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
+          ></path>
+          <path opacity=".5" d="M1472 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M1449 43h9l4-7-4-7h-9l-4 7 4 7zm-3 6h2v-2h-2v2zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M1467 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
+          <path
+            opacity=".2"
+            d="M1436 38h3l2-3-2-2h-3l-1 2 1 3zm3-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h2l2-2-2-3h-2l-2 3 2 2z"
+          ></path>
+          <path opacity=".5" d="M1510 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M1542 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-2-2 2-2h2l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M1506 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-2-2 2-3h3l1 3-1 2z"
+          ></path>
+          <path opacity=".5" d="M1565 35h2l1-2-1-2h-2l-2 2 2 2z"></path>
+          <path
+            opacity=".2"
+            d="M1542 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm17-1h6l2-4-2-5h-6l-2 5 2 4z"
+          ></path>
+          <path opacity=".5" d="M1560 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
+          <path
+            opacity=".2"
+            d="M1529 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
+          ></path>
+          <path opacity=".5" d="M1603 32h-18l-8-15 8-15h18l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M1634 32h-17l-9-15 9-15h17l9 15-9 15zm-14 21h-8l-4-7 4-7h8l3 7-3 7zm-45-18h-2l-1-2 1-2h2l2 2-2 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M1598 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-17-1h-6l-3-4 3-5h6l2 5-2 4zm-4-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l1 3-1 2z"
+          ></path>
+          <path opacity=".5" d="M1657 35h2l2-2-2-2h-2l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M1634 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M1652 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
+          <path
+            opacity=".2"
+            d="M1621 38h3l1-3-1-2h-3l-1 2 1 3zm2-9h4l1-3-1-3h-4l-1 3 1 3zm15 23h3l2-2-2-3h-3l-1 3 1 2z"
+          ></path>
+          <path opacity=".5" d="M1695 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M1727 32h-18l-8-15 8-15h18l8 15-8 15zm-15 21h-8l-3-7 3-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M1691 43h-9l-4-7 4-7h9l4 7-4 7zm3 6h-2v-2h2v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-3-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
+          ></path>
+          <path opacity=".5" d="M1749 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M1727 43h8l4-7-4-7h-8l-5 7 5 7zm-4 6h2v-2h-2v2zm18-1h6l2-4-2-5h-6l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M1744 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
+          <path
+            opacity=".2"
+            d="M1713 38h3l2-3-2-2h-3l-1 2 1 3zm3-9h3l2-3-2-3h-3l-2 3 2 3zm15 23h3l1-2-1-3h-3l-2 3 2 2z"
+          ></path>
+          <path opacity=".5" d="M1788 32h-18l-9-15 9-15h18l8 15-8 15z"></path>
+          <path
+            opacity=".5"
+            d="M1819 32h-17l-9-15 9-15h17l9 15-9 15zm-15 21h-7l-4-7 4-7h7l4 7-4 7zm-44-18h-2l-2-2 2-2h2l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M1783 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1l1 1-1 1zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l1 2-1 3zm-2-9h-4l-1-3 1-3h4l1 3-1 3zm-15 23h-3l-2-2 2-3h3l1 3-1 2z"
+          ></path>
+          <path opacity=".5" d="M1842 35h2l1-2-1-2h-2l-2 2 2 2z"></path>
+          <path
+            opacity=".2"
+            d="M1819 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1l-1 1 1 1zm17-1h6l3-4-3-5h-6l-2 5 2 4z"
+          ></path>
+          <path opacity=".5" d="M1837 30h5l2-5-2-4h-5l-3 4 3 5z"></path>
+          <path
+            opacity=".2"
+            d="M1806 38h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-1 3 1 3zm15 23h3l1-2-1-3h-3l-1 3 1 2z"
+          ></path>
+          <path opacity=".5" d="M1880 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M1911 32h-17l-9-15 9-15h17l9 15-9 15zm-14 21h-8l-4-7 4-7h8l3 7-3 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M1875 43h-8l-4-7 4-7h8l4 7-4 7zm3 6h-1v-2h1l1 1-1 1zm-17-1h-6l-2-4 2-5h6l2 5-2 4zm-4-18h-5l-2-5 2-4h5l3 4-3 5zm31 8h-3l-1-3 1-2h3l2 2-2 3zm-2-9h-3l-2-3 2-3h3l2 3-2 3zm-15 23h-3l-1-2 1-3h3l2 3-2 2z"
+          ></path>
+          <path opacity=".5" d="M1934 35h3l1-2-1-2h-3l-1 2 1 2z"></path>
+          <path
+            opacity=".2"
+            d="M1911 43h8l4-7-4-7h-8l-4 7 4 7zm-3 6h1l1-1-1-1h-1v2zm18-1h5l3-4-3-5h-5l-3 5 3 4z"
+          ></path>
+          <path opacity=".5" d="M1929 30h5l3-5-3-4h-5l-2 4 2 5z"></path>
+          <path
+            opacity=".2"
+            d="M1898 38h3l2-3-2-2h-3l-1 2 1 3zm3-9h3l2-3-2-3h-3l-2 3 2 3zm14 23h3l2-2-2-3h-3l-1 3 1 2z"
+          ></path>
+          <path opacity=".5" d="M1972 32h-17l-9-15 9-15h17l9 15-9 15z"></path>
+          <path
+            opacity=".5"
+            d="M2000 32V2h-14l-7 13-1 2 8 15h14zm-11 21h-8l-3-7 3-7h8l4 7-4 7zm-44-18h-3l-1-2 1-2h3l1 2-1 2z"
+          ></path>
+          <path
+            opacity=".2"
+            d="M1968 43h-8l-5-7 5-7h8l4 7-4 7zm3 6h-1l-1-1 1-1h1v2zm-18-1h-5l-3-4 3-5h5l3 5-3 4zm-3-18h-5l-3-5 3-4h5l2 4-2 5zm31 8h-3l-2-3 2-2h3l1 2-1 3zm-3-9h-3l-2-3 2-3h3l2 3-2 3zm-14 23h-3l-2-2 2-3h3l1 3-1 2zm36-15v-3 3zm0 11v-1 1zm-9-10h3l1-3-1-2h-3l-2 2 2 3zm2-9h3l2-3-2-3h-3l-2 3 2 3z"
+          ></path>
+          <path
+            d="M1990 12l-2 3h-17l-5-8-5 8h-28l-4-8-5 8h-18l-5-9-5 9h-18l-4-8-5 8h-30l-5-8-4 8h-18l-4-7-5 7h-17l-5-8-4 8h-32l-5-8-5 8h-17l-4-6-3 6h-17l-5-8-5 8h-34l-4-8-5 8h-17l-3-4-2 4h-18l-4-8-5 8h-36l-5-8-4 8h-18l-1-2-2 2h-17l-5-8-4 8h-35l-5-8-5 8h-17l-2-3-2 3h-17l-5-8-5 8h-28l-5-8-4 8h-18l-5-9-5 9h-18l-5-8-4 8h-30l-5-8-5 8h-17l-4-7-5 7h-17l-5-8-5 8h-26l-4-8-5 8h-17l-7-11-6 11h-18l-4-8-5 8h-28l-5-8-4 8h-18l-5-9-6 9h-17l-5-8-4 8h-25l-5-8-5 8h-17l-7-12-7 12h-17l-5-8-5 8h-28l-5-8-4 8h-18l-5-9-5 9h-18l-4-8-5 8h-25l-5-8-4 8h-18l-7-12-7 12h-17l-5-8-4 8h-25l-5-8-5 8h-17l-7-12-7 12h-17l-5-8-5 8h-30l-5-8-4 8h-18l-4-7-4 7h-18l-4-8-5 8h-24l-5-8-4 8h-18l-7-13-8 13h-17l-5-8-5 8h-28l-4-8-5 8h-18l-5-9-5 9h-18l-4-8-5 8h-28l-5-8-4 8h-18l-5-9-6 9h-17l-5-8-4 8h-25l-5-8-5 8h-17l-7-12-7 12h-17l-5-8-5 8h-25l-4-8-5 8h-17l-7-12-7 12h-18l-4-8-5 8H89l-5-8-4 8H62L55 3l-7 12H31l-5-8-4 8H4L0 8V0h2000v15l-10-3z"
+          ></path>
+        </g>
+      </svg>
+    </section>
+    <!-- About US section ends here -->
+    <!-- Team section starts here -->
+    <section class="team-section section">
+      <div class="container-xxl py-5">
+        <div class="container">
           <div
-            class="col-lg-3 col-md-6 wow fadeInUp"
+            class="text-center wow fadeInUp"
             data-wow-delay="0.1s"
             style="
               visibility: visible;
@@ -562,379 +561,391 @@
               animation-name: fadeInUp;
             "
           >
-            <div class="team-item">
-              <div class="overflow-hidden">
-                <img
-                  class="img-fluid"
-                  src="assets/images/profile-placeholder.webp"
-                  alt=""
-                  width="321"
-                  height="283"
-                />
-              </div>
-              <div
-                class="position-relative d-flex justify-content-center"
-                style="margin-top: -19px"
-              >
-                <a class="facebook-btn btn btn-square mx-1" href=""
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a class="twitter-btn btn btn-square mx-1" href=""
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a class="instagram-btn btn btn-square mx-1" href=""
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-              <div class="text-center p-4">
-                <h5 class="mb-0">Full Name</h5>
-                <small>Designation</small>
+            <h2 class="pb-2 section-title text-primary">Meet Our Staff</h2>
+          </div>
+          <div class="row g-4">
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+              style="
+                visibility: visible;
+                animation-delay: 0.1s;
+                animation-name: fadeInUp;
+              "
+            >
+              <div class="team-item">
+                <div class="overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/profile-placeholder.webp"
+                    alt=""
+                    width="321"
+                    height="283"
+                  />
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-center"
+                  style="margin-top: -19px"
+                >
+                  <a class="facebook-btn btn btn-square mx-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="twitter-btn btn btn-square mx-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="instagram-btn btn btn-square mx-1" href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+                <div class="text-center p-4">
+                  <h5 class="mb-0">Full Name</h5>
+                  <small>Designation</small>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 wow fadeInUp"
-            data-wow-delay="0.3s"
-            style="
-              visibility: visible;
-              animation-delay: 0.3s;
-              animation-name: fadeInUp;
-            "
-          >
-            <div class="team-item">
-              <div class="overflow-hidden">
-                <img
-                  class="img-fluid"
-                  src="assets/images/profile-placeholder.webp"
-                  alt=""
-                  width="321"
-                  height="283"
-                />
-              </div>
-              <div
-                class="position-relative d-flex justify-content-center"
-                style="margin-top: -19px"
-              >
-                <a class="facebook-btn btn btn-square mx-1" href=""
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a class="twitter-btn btn btn-square mx-1" href=""
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a class="instagram-btn btn btn-square mx-1" href=""
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-              <div class="text-center p-4">
-                <h5 class="mb-0">Full Name</h5>
-                <small>Designation</small>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 wow fadeInUp"
-            data-wow-delay="0.5s"
-            style="
-              visibility: visible;
-              animation-delay: 0.5s;
-              animation-name: fadeInUp;
-            "
-          >
-            <div class="team-item">
-              <div class="overflow-hidden">
-                <img
-                  class="img-fluid"
-                  src="assets/images/profile-placeholder.webp"
-                  alt=""
-                  width="321"
-                  height="283"
-                />
-              </div>
-              <div
-                class="position-relative d-flex justify-content-center"
-                style="margin-top: -19px"
-              >
-                <a class="facebook-btn btn btn-square mx-1" href=""
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a class="twitter-btn btn btn-square mx-1" href=""
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a class="instagram-btn btn btn-square mx-1" href=""
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-              <div class="text-center p-4">
-                <h5 class="mb-0">Full Name</h5>
-                <small>Designation</small>
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.3s"
+              style="
+                visibility: visible;
+                animation-delay: 0.3s;
+                animation-name: fadeInUp;
+              "
+            >
+              <div class="team-item">
+                <div class="overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/profile-placeholder.webp"
+                    alt=""
+                    width="321"
+                    height="283"
+                  />
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-center"
+                  style="margin-top: -19px"
+                >
+                  <a class="facebook-btn btn btn-square mx-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="twitter-btn btn btn-square mx-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="instagram-btn btn btn-square mx-1" href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+                <div class="text-center p-4">
+                  <h5 class="mb-0">Full Name</h5>
+                  <small>Designation</small>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 wow fadeInUp"
-            data-wow-delay="0.7s"
-            style="
-              visibility: visible;
-              animation-delay: 0.7s;
-              animation-name: fadeInUp;
-            "
-          >
-            <div class="team-item">
-              <div class="overflow-hidden">
-                <img
-                  class="img-fluid"
-                  src="assets/images/profile-placeholder.webp"
-                  alt=""
-                  width="321"
-                  height="283"
-                />
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.5s"
+              style="
+                visibility: visible;
+                animation-delay: 0.5s;
+                animation-name: fadeInUp;
+              "
+            >
+              <div class="team-item">
+                <div class="overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/profile-placeholder.webp"
+                    alt=""
+                    width="321"
+                    height="283"
+                  />
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-center"
+                  style="margin-top: -19px"
+                >
+                  <a class="facebook-btn btn btn-square mx-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="twitter-btn btn btn-square mx-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="instagram-btn btn btn-square mx-1" href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+                <div class="text-center p-4">
+                  <h5 class="mb-0">Full Name</h5>
+                  <small>Designation</small>
+                </div>
               </div>
-              <div
-                class="position-relative d-flex justify-content-center"
-                style="margin-top: -19px"
-              >
-                <a class="facebook-btn btn btn-square mx-1" href=""
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a class="twitter-btn btn btn-square mx-1" href=""
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a class="instagram-btn btn btn-square mx-1" href=""
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-              <div class="text-center p-4">
-                <h5 class="mb-0">Full Name</h5>
-                <small>Designation</small>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-delay="0.7s"
+              style="
+                visibility: visible;
+                animation-delay: 0.7s;
+                animation-name: fadeInUp;
+              "
+            >
+              <div class="team-item">
+                <div class="overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/profile-placeholder.webp"
+                    alt=""
+                    width="321"
+                    height="283"
+                  />
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-center"
+                  style="margin-top: -19px"
+                >
+                  <a class="facebook-btn btn btn-square mx-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="twitter-btn btn btn-square mx-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="instagram-btn btn btn-square mx-1" href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+                <div class="text-center p-4">
+                  <h5 class="mb-0">Full Name</h5>
+                  <small>Designation</small>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <svg
-      preserveAspectRatio="xMidYMax slice"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 2001 77"
-    >
-      <g fill="%23000000">
-        <path
-          opacity=".5"
-          d="M1993 46V24l-19-11-19 11v22l19 11 19-11zM1942 72V60l-10-5-10 5v12l10 5 10-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1961 52V36l-14-8-14 8v16l14 9 14-9zM1969 69v-8l-7-4-6 4v8l6 4 7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1871 46V24l19-11 19 11v22l-19 11-19-11z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1903 52V36l14-8 14 8v16l-14 9-14-9zM1895 69v-8l7-4 7 4v8l-7 4-7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1855 46V24l-19-11-19 11v22l19 11 19-11zM1803 72V60l-9-5-10 5v12l10 5 9-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1823 52V36l-14-8-14 8v16l14 9 14-9zM1831 69v-8l-7-4-7 4v8l7 4 7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1733 46V24l19-11 19 11v22l-19 11-19-11z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1765 52V36l14-8 14 8v16l-14 9-14-9zM1757 69v-8l6-4 7 4v8l-7 4-6-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1717 46V24l-19-11-19 11v22l19 11 19-11zM1665 72V60l-9-5-10 5v12l10 5 9-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1685 52V36l-14-8-14 8v16l14 9 14-9zM1693 69v-8l-7-4-7 4v8l7 4 7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1594 46V24l19-11 20 11v22l-20 11-19-11z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1626 52V36l14-8 15 8v16l-15 9-14-9zM1618 69v-8l7-4 7 4v8l-7 4-7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1579 46V24l-19-11-20 11v22l20 11 19-11zM1527 72V60l-10-5-9 5v12l9 5 10-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1547 52V36l-14-8-15 8v16l15 9 14-9zM1555 69v-8l-7-4-7 4v8l7 4 7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1456 46V24l19-11 19 11v22l-19 11-19-11z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1488 52V36l14-8 14 8v16l-14 9-14-9zM1480 69v-8l7-4 7 4v8l-7 4-7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1441 46V24l-20-11-19 11v22l19 11 20-11zM1389 72V60l-10-5-9 5v12l9 5 10-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1408 52V36l-14-8-14 8v16l14 9 14-9zM1416 69v-8l-6-4-7 4v8l7 4 6-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1318 46V24l19-11 19 11v22l-19 11-19-11z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1350 52V36l14-8 14 8v16l-14 9-14-9zM1342 69v-8l7-4 7 4v8l-7 4-7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1302 46V24l-19-11-19 11v22l19 11 19-11zM1251 72V60l-10-5-10 5v12l10 5 10-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1270 52V36l-14-8-14 8v16l14 9 14-9zM1278 69v-8l-7-4-7 4v8l7 4 7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1180 46V24l19-11 19 11v22l-19 11-19-11z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1212 52V36l14-8 14 8v16l-14 9-14-9zM1204 69v-8l7-4 7 4v8l-7 4-7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1164 46V24l-19-11-19 11v22l19 11 19-11zM1112 72V60l-9-5-10 5v12l10 5 9-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1132 52V36l-14-8-14 8v16l14 9 14-9zM1140 69v-8l-7-4-7 4v8l7 4 7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1041 46V24l20-11 19 11v22l-19 11-20-11z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M1074 52V36l14-8 14 8v16l-14 9-14-9zM1066 69v-8l6-4 7 4v8l-7 4-6-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M1026 46V24l-19-11-20 11v22l20 11 19-11zM974 72V60l-9-5-10 5v12l10 5 9-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M994 52V36l-14-8-14 8v16l14 9 14-9zM1002 69v-8l-7-4-7 4v8l7 4 7-4z"
-        ></path>
-        <path opacity=".5" d="M903 46V24l19-11 20 11v22l-20 11-19-11z"></path>
-        <path
-          opacity=".75"
-          d="M935 52V36l14-8 15 8v16l-15 9-14-9zM927 69v-8l7-4 7 4v8l-7 4-7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M888 46V24l-20-11-19 11v22l19 11 20-11zM836 72V60l-10-5-9 5v12l9 5 10-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M856 52V36l-15-8-14 8v16l14 9 15-9zM864 69v-8l-7-4-7 4v8l7 4 7-4z"
-        ></path>
-        <path opacity=".5" d="M765 46V24l19-11 19 11v22l-19 11-19-11z"></path>
-        <path
-          opacity=".75"
-          d="M797 52V36l14-8 14 8v16l-14 9-14-9zM789 69v-8l7-4 7 4v8l-7 4-7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M749 46V24l-19-11-19 11v22l19 11 19-11zM698 72V60l-10-5-9 5v12l9 5 10-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M717 52V36l-14-8-14 8v16l14 9 14-9zM725 69v-8l-7-4-6 4v8l6 4 7-4z"
-        ></path>
-        <path opacity=".5" d="M627 46V24l19-11 19 11v22l-19 11-19-11z"></path>
-        <path
-          opacity=".75"
-          d="M659 52V36l14-8 14 8v16l-14 9-14-9zM651 69v-8l7-4 7 4v8l-7 4-7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M611 46V24l-19-11-19 11v22l19 11 19-11zM560 72V60l-10-5-10 5v12l10 5 10-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M579 52V36l-14-8-14 8v16l14 9 14-9zM587 69v-8l-7-4-7 4v8l7 4 7-4z"
-        ></path>
-        <path opacity=".5" d="M489 46V24l19-11 19 11v22l-19 11-19-11z"></path>
-        <path
-          opacity=".75"
-          d="M521 52V36l14-8 14 8v16l-14 9-14-9zM513 69v-8l7-4 6 4v8l-6 4-7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M473 46V24l-19-11-19 11v22l19 11 19-11zM421 72V60l-9-5-10 5v12l10 5 9-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M441 52V36l-14-8-14 8v16l14 9 14-9zM449 69v-8l-7-4-7 4v8l7 4 7-4z"
-        ></path>
-        <path opacity=".5" d="M350 46V24l20-11 19 11v22l-19 11-20-11z"></path>
-        <path
-          opacity=".75"
-          d="M382 52V36l15-8 14 8v16l-14 9-15-9zM374 69v-8l7-4 7 4v8l-7 4-7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M335 46V24l-19-11-20 11v22l20 11 19-11zM283 72V60l-10-5-9 5v12l9 5 10-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M303 52V36l-14-8-14 8v16l14 9 14-9zM311 69v-8l-7-4-7 4v8l7 4 7-4z"
-        ></path>
-        <path opacity=".5" d="M212 46V24l19-11 20 11v22l-20 11-19-11z"></path>
-        <path
-          opacity=".75"
-          d="M244 52V36l14-8 14 8v16l-14 9-14-9zM236 69v-8l7-4 7 4v8l-7 4-7-4z"
-        ></path>
-        <path
-          opacity=".5"
-          d="M197 46V24l-20-11-19 11v22l19 11 20-11zM145 72V60l-10-5-9 5v12l9 5 10-5z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M164 52V36l-14-8-14 8v16l14 9 14-9zM173 69v-8l-7-4-7 4v8l7 4 7-4z"
-        ></path>
-        <path opacity=".5" d="M74 46V24l19-11 19 11v22L93 57 74 46z"></path>
-        <path
-          opacity=".3"
-          d="M53 68V54l13-8 13 8v14l-13 8-13-8zM191 68V54l13-8 13 8v14l-13 8-13-8zM330 68V54l13-8 13 8v14l-13 8-13-8zM468 68V54l13-8 13 8v14l-13 8-13-8zM606 68V54l13-8 13 8v14l-13 8-13-8zM744 68V54l13-8 13 8v14l-13 8-13-8zM883 68V54l12-8 13 8v14l-13 8-12-8zM1021 68V54l13-8 13 8v14l-13 8-13-8zM1159 68V54l13-8 13 8v14l-13 8-13-8zM1297 68V54l13-8 13 8v14l-13 8-13-8zM1435 68V54l13-8 13 8v14l-13 8-13-8zM1574 68V54l13-8 12 8v14l-12 8-13-8zM1712 68V54l13-8 13 8v14l-13 8-13-8zM1850 68V54l13-8 13 8v14l-13 8-13-8z"
-        ></path>
-        <path
-          opacity=".75"
-          d="M106 52V36l14-8 14 8v16l-14 9-14-9zM98 69v-8l7-4 7 4v8l-7 4-7-4z"
-        ></path>
-        <path opacity=".5" d="M58 46V24L39 13 20 24v22l19 11 19-11z"></path>
-        <path opacity=".75" d="M34 69v-8l-7-4-6 4v8l6 4 7-4z"></path>
-        <path
-          d="M2001 0v15l-21 12-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14L0 13V0h2001z"
-        ></path>
-        <path opacity=".75" d="M12 28L0 35v19l12 7 14-9V36l-14-8z"></path>
-        <path opacity=".3" d="M2001 46l-13 8v14l13 8V46z"></path>
-      </g>
-    </svg>
-  </section>
-  <%- include("../partials/_footer.ejs") %>
-</body>
+      <svg
+        preserveAspectRatio="xMidYMax slice"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 2001 77"
+      >
+        <g fill="%23000000">
+          <path
+            opacity=".5"
+            d="M1993 46V24l-19-11-19 11v22l19 11 19-11zM1942 72V60l-10-5-10 5v12l10 5 10-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1961 52V36l-14-8-14 8v16l14 9 14-9zM1969 69v-8l-7-4-6 4v8l6 4 7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1871 46V24l19-11 19 11v22l-19 11-19-11z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1903 52V36l14-8 14 8v16l-14 9-14-9zM1895 69v-8l7-4 7 4v8l-7 4-7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1855 46V24l-19-11-19 11v22l19 11 19-11zM1803 72V60l-9-5-10 5v12l10 5 9-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1823 52V36l-14-8-14 8v16l14 9 14-9zM1831 69v-8l-7-4-7 4v8l7 4 7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1733 46V24l19-11 19 11v22l-19 11-19-11z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1765 52V36l14-8 14 8v16l-14 9-14-9zM1757 69v-8l6-4 7 4v8l-7 4-6-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1717 46V24l-19-11-19 11v22l19 11 19-11zM1665 72V60l-9-5-10 5v12l10 5 9-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1685 52V36l-14-8-14 8v16l14 9 14-9zM1693 69v-8l-7-4-7 4v8l7 4 7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1594 46V24l19-11 20 11v22l-20 11-19-11z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1626 52V36l14-8 15 8v16l-15 9-14-9zM1618 69v-8l7-4 7 4v8l-7 4-7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1579 46V24l-19-11-20 11v22l20 11 19-11zM1527 72V60l-10-5-9 5v12l9 5 10-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1547 52V36l-14-8-15 8v16l15 9 14-9zM1555 69v-8l-7-4-7 4v8l7 4 7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1456 46V24l19-11 19 11v22l-19 11-19-11z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1488 52V36l14-8 14 8v16l-14 9-14-9zM1480 69v-8l7-4 7 4v8l-7 4-7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1441 46V24l-20-11-19 11v22l19 11 20-11zM1389 72V60l-10-5-9 5v12l9 5 10-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1408 52V36l-14-8-14 8v16l14 9 14-9zM1416 69v-8l-6-4-7 4v8l7 4 6-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1318 46V24l19-11 19 11v22l-19 11-19-11z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1350 52V36l14-8 14 8v16l-14 9-14-9zM1342 69v-8l7-4 7 4v8l-7 4-7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1302 46V24l-19-11-19 11v22l19 11 19-11zM1251 72V60l-10-5-10 5v12l10 5 10-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1270 52V36l-14-8-14 8v16l14 9 14-9zM1278 69v-8l-7-4-7 4v8l7 4 7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1180 46V24l19-11 19 11v22l-19 11-19-11z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1212 52V36l14-8 14 8v16l-14 9-14-9zM1204 69v-8l7-4 7 4v8l-7 4-7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1164 46V24l-19-11-19 11v22l19 11 19-11zM1112 72V60l-9-5-10 5v12l10 5 9-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1132 52V36l-14-8-14 8v16l14 9 14-9zM1140 69v-8l-7-4-7 4v8l7 4 7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1041 46V24l20-11 19 11v22l-19 11-20-11z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M1074 52V36l14-8 14 8v16l-14 9-14-9zM1066 69v-8l6-4 7 4v8l-7 4-6-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1026 46V24l-19-11-20 11v22l20 11 19-11zM974 72V60l-9-5-10 5v12l10 5 9-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M994 52V36l-14-8-14 8v16l14 9 14-9zM1002 69v-8l-7-4-7 4v8l7 4 7-4z"
+          ></path>
+          <path opacity=".5" d="M903 46V24l19-11 20 11v22l-20 11-19-11z"></path>
+          <path
+            opacity=".75"
+            d="M935 52V36l14-8 15 8v16l-15 9-14-9zM927 69v-8l7-4 7 4v8l-7 4-7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M888 46V24l-20-11-19 11v22l19 11 20-11zM836 72V60l-10-5-9 5v12l9 5 10-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M856 52V36l-15-8-14 8v16l14 9 15-9zM864 69v-8l-7-4-7 4v8l7 4 7-4z"
+          ></path>
+          <path opacity=".5" d="M765 46V24l19-11 19 11v22l-19 11-19-11z"></path>
+          <path
+            opacity=".75"
+            d="M797 52V36l14-8 14 8v16l-14 9-14-9zM789 69v-8l7-4 7 4v8l-7 4-7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M749 46V24l-19-11-19 11v22l19 11 19-11zM698 72V60l-10-5-9 5v12l9 5 10-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M717 52V36l-14-8-14 8v16l14 9 14-9zM725 69v-8l-7-4-6 4v8l6 4 7-4z"
+          ></path>
+          <path opacity=".5" d="M627 46V24l19-11 19 11v22l-19 11-19-11z"></path>
+          <path
+            opacity=".75"
+            d="M659 52V36l14-8 14 8v16l-14 9-14-9zM651 69v-8l7-4 7 4v8l-7 4-7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M611 46V24l-19-11-19 11v22l19 11 19-11zM560 72V60l-10-5-10 5v12l10 5 10-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M579 52V36l-14-8-14 8v16l14 9 14-9zM587 69v-8l-7-4-7 4v8l7 4 7-4z"
+          ></path>
+          <path opacity=".5" d="M489 46V24l19-11 19 11v22l-19 11-19-11z"></path>
+          <path
+            opacity=".75"
+            d="M521 52V36l14-8 14 8v16l-14 9-14-9zM513 69v-8l7-4 6 4v8l-6 4-7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M473 46V24l-19-11-19 11v22l19 11 19-11zM421 72V60l-9-5-10 5v12l10 5 9-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M441 52V36l-14-8-14 8v16l14 9 14-9zM449 69v-8l-7-4-7 4v8l7 4 7-4z"
+          ></path>
+          <path opacity=".5" d="M350 46V24l20-11 19 11v22l-19 11-20-11z"></path>
+          <path
+            opacity=".75"
+            d="M382 52V36l15-8 14 8v16l-14 9-15-9zM374 69v-8l7-4 7 4v8l-7 4-7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M335 46V24l-19-11-20 11v22l20 11 19-11zM283 72V60l-10-5-9 5v12l9 5 10-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M303 52V36l-14-8-14 8v16l14 9 14-9zM311 69v-8l-7-4-7 4v8l7 4 7-4z"
+          ></path>
+          <path opacity=".5" d="M212 46V24l19-11 20 11v22l-20 11-19-11z"></path>
+          <path
+            opacity=".75"
+            d="M244 52V36l14-8 14 8v16l-14 9-14-9zM236 69v-8l7-4 7 4v8l-7 4-7-4z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M197 46V24l-20-11-19 11v22l19 11 20-11zM145 72V60l-10-5-9 5v12l9 5 10-5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M164 52V36l-14-8-14 8v16l14 9 14-9zM173 69v-8l-7-4-7 4v8l7 4 7-4z"
+          ></path>
+          <path opacity=".5" d="M74 46V24l19-11 19 11v22L93 57 74 46z"></path>
+          <path
+            opacity=".3"
+            d="M53 68V54l13-8 13 8v14l-13 8-13-8zM191 68V54l13-8 13 8v14l-13 8-13-8zM330 68V54l13-8 13 8v14l-13 8-13-8zM468 68V54l13-8 13 8v14l-13 8-13-8zM606 68V54l13-8 13 8v14l-13 8-13-8zM744 68V54l13-8 13 8v14l-13 8-13-8zM883 68V54l12-8 13 8v14l-13 8-12-8zM1021 68V54l13-8 13 8v14l-13 8-13-8zM1159 68V54l13-8 13 8v14l-13 8-13-8zM1297 68V54l13-8 13 8v14l-13 8-13-8zM1435 68V54l13-8 13 8v14l-13 8-13-8zM1574 68V54l13-8 12 8v14l-12 8-13-8zM1712 68V54l13-8 13 8v14l-13 8-13-8zM1850 68V54l13-8 13 8v14l-13 8-13-8z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M106 52V36l14-8 14 8v16l-14 9-14-9zM98 69v-8l7-4 7 4v8l-7 4-7-4z"
+          ></path>
+          <path opacity=".5" d="M58 46V24L39 13 20 24v22l19 11 19-11z"></path>
+          <path opacity=".75" d="M34 69v-8l-7-4-6 4v8l6 4 7-4z"></path>
+          <path
+            d="M2001 0v15l-21 12-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14L0 13V0h2001z"
+          ></path>
+          <path opacity=".75" d="M12 28L0 35v19l12 7 14-9V36l-14-8z"></path>
+          <path opacity=".3" d="M2001 46l-13 8v14l13 8V46z"></path>
+        </g>
+      </svg>
+    </section>
+    <%- include("../partials/_footer.ejs") %>
+  </body>
 </html>
