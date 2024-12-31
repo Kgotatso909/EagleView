@@ -35,8 +35,5 @@ body {
   color: var(--text-color);
   font-family: var(--page-font);
   font-size: 16px;
-}
-
-h1, h2 {
-  font-family: var(--title-font);
+  max-width:100%;
 }
