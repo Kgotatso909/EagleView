@@ -37,7 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Reset all error messages
   function resetErrors() {
-    const fields = ["name", "email", "checkin", "checkout", "select1", "select2", "select3", "message"];
+    const fields = [
+      "name",
+      "email",
+      "checkin",
+      "checkout",
+      "select1",
+      "select2",
+      "select3",
+      "message",
+    ];
     fields.forEach((field) => {
       const input = document.getElementById(field);
       const error = document.getElementById(`${field}Error`);
@@ -116,27 +125,34 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (!checkout || !validateDates()) {
-      setError("checkout", "checkoutError", "Please select a valid check-out date.");
+      setError(
+        "checkout",
+        "checkoutError",
+        "Please select a valid check-out date."
+      );
       isValid = false;
     }
 
     if (!adult) {
-      setError("select1", "select1Error", "Please select the number of adults.");
+      setError(
+        "select1",
+        "select1Error",
+        "Please select the number of adults."
+      );
       isValid = false;
     }
 
     if (!child) {
-      setError("select2", "select2Error", "Please select the number of children.");
+      setError(
+        "select2",
+        "select2Error",
+        "Please select the number of children."
+      );
       isValid = false;
     }
 
     if (!room) {
       setError("select3", "select3Error", "Please select a room.");
-      isValid = false;
-    }
-
-    if (!message) {
-      setError("message", "messageError", "Please enter your special requests.");
       isValid = false;
     }
 
@@ -147,8 +163,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // After showing the toast, reset the form and validation
       setTimeout(() => {
-        bookingForm.submit();  // Submit form after toast shows
-        bookingForm.reset();   // Reset the form
+        bookingForm.submit(); // Submit form after toast shows
+        bookingForm.reset(); // Reset the form
         bookingForm.classList.remove("was-validated");
 
         // Clear error messages after form submission
@@ -157,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         checkoutInput.classList.remove("is-invalid");
         checkoutError.style.display = "none";
-      }, 500);  // Delay the form reset to allow the toast to show
+      }, 500); // Delay the form reset to allow the toast to show
     }
   });
 });
